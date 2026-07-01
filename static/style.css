@@ -682,3 +682,14 @@ dd { margin-bottom: 0.5rem; }
     border-radius: 8px;
     border: 1px solid #e9ecef;
 }
+
+/* Notice */
+.notice {
+    background: #fff3e0;
+    border: 1px solid #ffe0b2;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #e65100;
+}
