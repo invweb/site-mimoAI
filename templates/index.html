@@ -8,197 +8,198 @@
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/anime">Аниме</a>
-        <a href="/search">Поиск</a>
+        <a href="/" data-i18n="nav_home">Home</a>
+        <a href="/about" data-i18n="nav_about">About</a>
+        <a href="/anime" data-i18n="nav_anime">Аниме</a>
+        <a href="/search" data-i18n="nav_search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <section class="hero">
-            <h1>MiMo AI — Аниме портал</h1>
-            <p class="hero-subtitle">Создано с помощью AI-ассистента MiMo. 16 разделов, 25+ страниц, 22 SVG-иллюстрации.</p>
+            <h1 data-i18n="hero_title">MiMo AI — Аниме портал</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Создано с помощью AI-ассистента MiMo. 16 разделов, 25+ страниц, 22 SVG-иллюстрации.</p>
             <div class="hero-buttons">
-                <a href="/anime" class="btn btn-primary">Смотреть аниме</a>
-                <a href="/search" class="btn btn-secondary">Найти аниме</a>
+                <a href="/anime" class="btn btn-primary" data-i18n="hero_btn1">Смотреть аниме</a>
+                <a href="/search" class="btn btn-secondary" data-i18n="hero_btn2">Найти аниме</a>
             </div>
         </section>
 
         <section>
-            <h2>Что здесь есть</h2>
-            <p>Этот сайт — коллекция информации о самых популярных аниме-франшизах мира. Каждый раздел содержит подробное описание сюжета, персонажей,��统 сил и полезные ссылки на легальные платформы для просмотра.</p>
+            <h2 data-i18n="section_what">Что здесь есть</h2>
+            <p data-i18n="section_what_text">Этот сайт — коллекция информации о самых популярных аниме-франшизах мира. Каждый раздел содержит подробное описание сюжета, персонажей, систем сил и полезные ссылки на легальные платформы для просмотра.</p>
         </section>
 
         <section>
-            <h2>Популярное аниме</h2>
+            <h2 data-i18n="section_popular">Популярное аниме</h2>
             <div class="hub-grid">
                 <a href="/onepiece" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🏴‍☠️</div>
-                    <h3>One Piece</h3>
-                    <p>Самая продаваемая манга в мире — более 516 млн копий. Пираты Соломенной Шляпы ищут легендарное сокровище.</p>
+                    <h3 data-i18n="one_piece">One Piece</h3>
+                    <p data-i18n="one_piece_desc">Самая продаваемая манга в мире — более 516 млн копий. Пираты Соломенной Шляпы ищут легендарное сокровище.</p>
                     <span class="hub-badge">1168 серий</span>
                 </a>
 
                 <a href="/naruto" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🍥</div>
-                    <h3>Наруто</h3>
-                    <p>Ниндзя из Конохи, мечтающий стать Хокаге. 720 серий + Боруто.</p>
+                    <h3 data-i18n="naruto">Наруто</h3>
+                    <p data-i18n="naruto_desc">Ниндзя из Конохи, мечтающий стать Хокаге. 720 серий + Боруто.</p>
                     <span class="hub-badge">720 серий</span>
                 </a>
 
                 <a href="/bleach" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">⚔️</div>
-                    <h3>Блич</h3>
-                    <p>Синигами, пустые и квинси. Тысячелетняя кровавая война.</p>
+                    <h3 data-i18n="bleach">Блич</h3>
+                    <p data-i18n="bleach_desc">Синигами, пустые и квинси. Тысячелетняя кровавая война.</p>
                     <span class="hub-badge">406 серий</span>
                 </a>
 
                 <a href="/aot" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🗼</div>
-                    <h3>Атака Титанов</h3>
-                    <p>Человечество за стенами. Гигантские Титаны. Тайна мира.</p>
+                    <h3 data-i18n="aot">Атака Титанов</h3>
+                    <p data-i18n="aot_desc">Человечество за стенами. Гигантские Титаны. Тайна мира.</p>
                     <span class="hub-badge">87 серий</span>
                 </a>
 
                 <a href="/demonslayer" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🗡️</div>
-                    <h3>Истребитель демонов</h3>
-                    <p>Танджиро ищет лекарство для сестры-демона. Уфотабле.</p>
+                    <h3 data-i18n="demonslayer">Истребитель демонов</h3>
+                    <p data-i18n="demonslayer_desc">Танджиро ищет лекарство для сестры-демона. Уфотабле.</p>
                     <span class="hub-badge">2019–наст.</span>
                 </a>
 
                 <a href="/deathnote" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">📓</div>
-                    <h3>Тетрадь Смерти</h3>
-                    <p>Лайт Ягами vs L. Психологический триллер.</p>
+                    <h3 data-i18n="deathnote">Тетрадь Смерти</h3>
+                    <p data-i18n="deathnote_desc">Лайт Ягами vs L. Психологический триллер.</p>
                     <span class="hub-badge">37 серий</span>
                 </a>
             </div>
         </section>
 
         <section>
-            <h2>Классика и легенды</h2>
+            <h2 data-i18n="section_classic">Классика и легенды</h2>
             <div class="hub-grid">
                 <a href="/dragonball" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🐉</div>
-                    <h3>Дракон Болл</h3>
-                    <p>Классика сёнэн. Гоку и поиск драконьих шаров.</p>
+                    <h3 data-i18n="dragonball">Дракон Болл</h3>
+                    <p data-i18n="dragonball_desc">Классика сёнэн. Гоку и поиск драконьих шаров.</p>
                 </a>
 
                 <a href="/ghibli" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🌳</div>
-                    <h3>Studio Ghibli</h3>
-                    <p>Легендарная студия Миядзаки. 25 полнометражных фильмов.</p>
+                    <h3 data-i18n="ghibli">Studio Ghibli</h3>
+                    <p data-i18n="ghibli_desc">Легендарная студия Миядзаки. 25 полнометражных фильмов.</p>
                 </a>
 
                 <a href="/totoro" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🐾</div>
-                    <h3>Мой сосед Тоторо</h3>
-                    <p>Классика Ghibli. Девочки и лесной дух. 1988 год.</p>
+                    <h3 data-i18n="totoro">Мой сосед Тоторо</h3>
+                    <p data-i18n="totoro_desc">Классика Ghibli. Девочки и лесной дух. 1988 год.</p>
                 </a>
 
                 <a href="/hxh" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">⭐</div>
-                    <h3>Охотник x Охотник</h3>
-                    <p>Гон ищет отца. Тогаши. Один из лучших сёнэн.</p>
+                    <h3 data-i18n="hxh">Охотник x Охотник</h3>
+                    <p data-i18n="hxh_desc">Гон ищет отца. Тогаши. Один из лучших сёнэн.</p>
                 </a>
 
                 <a href="/fma" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">⚗️</div>
-                    <h3>Стальной алхимик</h3>
-                    <p>Братья Элрик и философский камень. Brotherhood.</p>
+                    <h3 data-i18n="fma">Стальной алхимик</h3>
+                    <p data-i18n="fma_desc">Братья Элрик и философский камень. Brotherhood.</p>
                 </a>
 
                 <a href="/guyver" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🤖</div>
-                    <h3>Гайвер</h3>
-                    <p>Био-броня, зоаноиды, корпорация «Кронос».</p>
+                    <h3 data-i18n="guyver">Гайвер</h3>
+                    <p data-i18n="guyver_desc">Био-броня, зоаноиды, корпорация «Кронос».</p>
                 </a>
             </div>
         </section>
 
         <section>
-            <h2>Новинки и хиты</h2>
+            <h2 data-i18n="section_new">Новинки и хиты</h2>
             <div class="hub-grid">
                 <a href="/jjk" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">👁️</div>
-                    <h3>Магическая битва</h3>
-                    <p>Проклятия и колдовство. MAPPA. 2020–наст.</p>
+                    <h3 data-i18n="jjk">Магическая битва</h3>
+                    <p data-i18n="jjk_desc">Проклятия и колдовство. MAPPA. 2020–наст.</p>
                 </a>
 
                 <a href="/mha" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">💪</div>
-                    <h3>Моя геройская академия</h3>
-                    <p>Мир супергероев. Изuku и Олл Майт.</p>
+                    <h3 data-i18n="mha">Моя геройская академия</h3>
+                    <p data-i18n="mha_desc">Мир супергероев. Изuku и Олл Майт.</p>
                 </a>
 
                 <a href="/opm" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">👊</div>
-                    <h3>Ванпанчмен</h3>
-                    <p>Сайтама. Один удар. Пародия на сёнэн.</p>
+                    <h3 data-i18n="opm">Ванпанчмен</h3>
+                    <p data-i18n="opm_desc">Сайтама. Один удар. Пародия на сёнэн.</p>
                 </a>
 
                 <a href="/sao" class="hub-card">
                     <div class="hub-icon" style="font-size:2.5rem">🎮</div>
-                    <h3>Мастера Меча Онлайн</h3>
-                    <p>VRMMORPG. Кирито и Асуна. Игровой мир.</p>
+                    <h3 data-i18n="sao">Мастера Меча Онлайн</h3>
+                    <p data-i18n="sao_desc">VRMMORPG. Кирито и Асуна. Игровой мир.</p>
                 </a>
             </div>
         </section>
 
         <section>
-            <h2>Статистика сайта</h2>
+            <h2 data-i18n="section_stats">Статистика сайта</h2>
             <div class="info-grid">
-                <div class="info-card"><span class="info-label">Аниме-разделов</span><span class="info-value">16</span></div>
-                <div class="info-card"><span class="info-label">Страниц</span><span class="info-value">30+</span></div>
-                <div class="info-card"><span class="info-label">SVG-иллюстраций</span><span class="info-value">22</span></div>
-                <div class="info-card"><span class="info-label">Интерактивные</span><span class="info-value">Квиз, поиск, фильтры</span></div>
+                <div class="info-card"><span class="info-label" data-i18n="stat_sections">Аниме-разделов</span><span class="info-value">16</span></div>
+                <div class="info-card"><span class="info-label" data-i18n="stat_pages">Страниц</span><span class="info-value">30+</span></div>
+                <div class="info-card"><span class="info-label" data-i18n="stat_svg">SVG-иллюстраций</span><span class="info-value">22</span></div>
+                <div class="info-card"><span class="info-label" data-i18n="stat_interactive">Интерактивные</span><span class="info-value">Квиз, поиск, фильтры</span></div>
             </div>
         </section>
 
         <section>
-            <h2>О сайте</h2>
-            <p>Этот сайт создан с помощью <strong>MiMo AI</strong> — AI-ассистента, интегрированного в VS Code. Все тексты, структура и SVG-иллюстрации были сгенерированы и отредактированы с участием искусственного интеллекта.</p>
-            <p>Сайт использует <strong>Python Flask</strong> для бэкенда и простой <strong>HTML/CSS/JavaScript</strong> для фронтенда. Деплой осуществляется на <strong>Fly.io</strong>.</p>
-            <p>Все изображения на сайте — <strong>оригинальные SVG-иллюстрации</strong>, созданные специально для этого проекта. Мы не используем скриншоты из аниме по причинам авторского права.</p>
+            <h2 data-i18n="section_about">О сайте</h2>
+            <p data-i18n="section_about_text">Этот сайт создан с помощью MiMo AI — AI-ассистента, интегрированного в VS Code. Все тексты, структура и SVG-иллюстрации были сгенерированы и отредактированы с участием искусственного интеллекта.</p>
         </section>
 
         <section>
-            <h2>Технологии</h2>
+            <h2 data-i18n="section_tech">Технологии</h2>
             <div class="tech-grid">
                 <div class="tech-item">
-                    <strong>Backend</strong>
+                    <strong data-i18n="tech_backend">Backend</strong>
                     <span>Python 3.12, Flask, Gunicorn</span>
                 </div>
                 <div class="tech-item">
-                    <strong>Frontend</strong>
+                    <strong data-i18n="tech_frontend">Frontend</strong>
                     <span>HTML5, CSS3, vanilla JavaScript</span>
                 </div>
                 <div class="tech-item">
-                    <strong>Деплой</strong>
+                    <strong data-i18n="tech_deploy">Деплой</strong>
                     <span>Fly.io, Docker</span>
                 </div>
                 <div class="tech-item">
-                    <strong>AI-инструмент</strong>
+                    <strong data-i18n="tech_ai">AI-инструмент</strong>
                     <span>MiMo AI (VS Code)</span>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Быстрый доступ</h2>
+            <h2 data-i18n="section_quick">Быстрый доступ</h2>
             <div class="quick-links">
-                <a href="/anime" class="quick-link">Все аниме</a>
-                <a href="/search" class="quick-link">Поиск</a>
+                <a href="/anime" class="quick-link" data-i18n="quick_all">Все аниме</a>
+                <a href="/search" class="quick-link" data-i18n="quick_search">Поиск</a>
                 <a href="/guyver" class="quick-link">Гайвер</a>
                 <a href="/totoro" class="quick-link">Тоторо</a>
                 <a href="/ghibli" class="quick-link">Ghibli</a>
-                <a href="/about" class="quick-link">О проекте</a>
+                <a href="/about" class="quick-link" data-i18n="quick_about">О проекте</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>MiMo AI — Аниме портал | Создано с помощью AI | <a href="https://github.com/invweb/site" target="_blank">GitHub</a></p>
+        <p><span data-i18n="footer_text">MiMo AI — Аниме портал | Создано с помощью AI</span> | <a href="https://github.com/invweb/site" target="_blank">GitHub</a></p>
     </footer>
+
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>
