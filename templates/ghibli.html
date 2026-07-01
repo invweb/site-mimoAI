@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+        <a href="/totoro">Тоторо</a>
+        <a href="/bleach">Блич</a>
+        <a href="/onepiece">One Piece</a>
+        <a href="/ghibli">Ghibli</a>
+        <a href="/naruto">Наруто</a>
+    </nav>
+    <main>
+        <h1>Studio Ghibli</h1>
+        <img src="{{ url_for('static', filename='ghibli_hero.svg') }}" alt="Studio Ghibli" class="hero-image">
+        <p class="subtitle">Легендарная японская анимационная студия</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Основание</span><span class="info-value">1985 год</span></div>
+                <div class="info-card"><span class="info-label">Основатели</span><span class="info-value">Миядзаки, Такахата, Судзуки</span></div>
+                <div class="info-card"><span class="info-label">Штаб-квартира</span><span class="info-value">Коганеи, Токио</span></div>
+                <div class="info-card"><span class="info-label">Сотрудники</span><span class="info-value">~150 человек</span></div>
+                <div class="info-card"><span class="info-label">Владелец</span><span class="info-value">Nippon Television</span></div>
+                <div class="info-card"><span class="info-label">Логотип</span><span class="info-value">Тоторо</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>История</h2>
+            <p>Studio Ghibli основана в 1985 году режиссёром <strong>Хаяо Миядзаки</strong> и его другом <strong>Исао Такахатой</strong> при поддержке компании Tokuma. Студия создавалась только для производства высококачественных полнометражных фильмов — рискованный шаг на рынке Японии.</p>
+            <p>Название дал Миядзаки — итальянский самолёт Caproni Ca.309 Ghibli, а также ливийский ветер сирокко. Идея — «дуновение нового ветра в анимационной индустрии».</p>
+            <p>В 2023 году Nippon Television приобрела 42,3% акций, сделав студию дочерней компанией. Причиной был поиск преемника — Горо Миядзаки отказался стать им.</p>
+            <p>В 2024 году Studio Ghibli получила <strong>почётную Золотую пальмовую ветвь</strong> на Каннском кинофестивале.</p>
+        </section>
+
+        <section>
+            <h2>Ключевые фигуры</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">Х</div>
+                    <h3>Хаяо Миядзаки</h3>
+                    <p>Главный режиссёр, сценарист, раскадровщик. Создатель Тоторо, Наусики, Поньо.</p>
+                    <span class="char-tag">Режиссёр</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#2e7d32">И</div>
+                    <h3>Исао Такахата</h3>
+                    <p>Режиссёр. «Могила светлячков», «Принцесса Кагуя».</p>
+                    <span class="char-tag">Режиссёр</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Т</div>
+                    <h3>Тосио Судзуки</h3>
+                    <p>Продюсер и председатель. Душа студии.</p>
+                    <span class="char-tag">Продюсер</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#6a1b9a">Д</div>
+                    <h3>Дзё Хисаиси</h3>
+                    <p>Композитор. Написал музыку к большинству фильмов.</p>
+                    <span class="char-tag">Композитор</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Фильмография</h2>
+            <p>Студия выпустила 25 полнометражных фильмов. Вот ключевые:</p>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Год</th>
+                            <th>Фильм</th>
+                            <th>Режиссёр</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1984</td><td>Навсикая из Долины ветров</td><td>Миядзаки</td></tr>
+                        <tr><td>1986</td><td>Небесный замок Лапута</td><td>Миядзаки</td></tr>
+                        <tr><td>1988</td><td>Могила светлячков</td><td>Такахата</td></tr>
+                        <tr><td>1988</td><td>Мой сосед Тоторо</td><td>Миядзаки</td></tr>
+                        <tr><td>1989</td><td>Ведьмина служба доставки</td><td>Миядзаки</td></tr>
+                        <tr><td>1997</td><td>Принцесса Мононоке</td><td>Миядзаки</td></tr>
+                        <tr><td>2001</td><td>Унесённые призраками</td><td>Миядзаки</td></tr>
+                        <tr><td>2004</td><td>Ходячий замок</td><td>Миядзаки</td></tr>
+                        <tr><td>2008</td><td>Рыбка Поньо на утёсе</td><td>Миядзаки</td></tr>
+                        <tr><td>2013</td><td>Ветер крепчает</td><td>Миядзаки</td></tr>
+                        <tr><td>2013</td><td>Сказание о принцессе Кагуя</td><td>Такахата</td></tr>
+                        <tr><td>2023</td><td>Мальчик и птица</td><td>Миядзаки</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Достижения</h2>
+            <ul>
+                <li><strong>«Унесённые призраками»</strong> — Оскар за лучший анимационный фильм (2003)</li>
+                <li><strong>Почётная Золотая пальмовая ветвь</strong> — Канны (2024)</li>
+                <li>Первая японская студия, активно внедрившая компьютерную анимацию</li>
+                <li>Музей Гибли в Митаке (Токио)</li>
+                <li>Парк развлечений Ghibli Park (2022)</li>
+                <li>Одни из самых кассовых аниме-фильмов в истории</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Наследие</h2>
+            <p>На логотипе студии изображён Тоторо. Благодаря популярности персонажа и продаже товаров студия смогла покрыть затраты на производство новых лент.</p>
+            <p>В 2025 году трендом стал ChatGPT, генерирующий изображения в стиле Ghibli — это вызвало дискуссии о авторских правах.</p>
+        </section>
+    </main>
+</body>
+</html>

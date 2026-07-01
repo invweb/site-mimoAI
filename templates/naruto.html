@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наруто</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+        <a href="/totoro">Тоторо</a>
+        <a href="/bleach">Блич</a>
+        <a href="/onepiece">One Piece</a>
+        <a href="/ghibli">Ghibli</a>
+        <a href="/naruto">Наруто</a>
+    </nav>
+    <main>
+        <h1>Наруто (Naruto)</h1>
+        <img src="{{ url_for('static', filename='naruto_hero.svg') }}" alt="Наруто" class="hero-image">
+        <p class="subtitle">Манга Масаши Кисимото и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, приключения</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Масаши Кисимото</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Pierrot</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">1999–2014, 72 тома</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2002–2017, 720 серий</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 250 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <img src="{{ url_for('static', filename='naruto_portrait.svg') }}" alt="Наруто Узумаки" class="section-image">
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Наруто Узумаки</strong> — ниндзя-подросток из деревни Коноха, мечтающий стать Хокаге — лидером деревни. В детстве в него запечатали <strong>Кьюби</strong> — Девятихвостого Лиса, демоническая сила, которая разрушила деревню.</p>
+            <p>Из-за этого Наруто всю жизнь избегали жители деревни. Но он не сдался и доказал свою силу, защищая друзей и деревню.</p>
+            <p>История разделена на две части: <strong>Наруто</strong> (подростковое путешествие) и <strong>Наруто Шиппуден</strong> (взрослая жизнь, битва с Мадарой и Кагуей).</p>
+        </section>
+
+        <section>
+            <img src="{{ url_for('static', filename='naruto_konoha.svg') }}" alt="Коноха" class="section-image">
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ff6f00">Н</div>
+                    <h3>Наруто Узумаки</h3>
+                    <p>Главный герой. Вместилище Кьюби. Мечтает стать Хокаге. Использует Расенган и клонов.</p>
+                    <span class="char-tag">Хокаге</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">С</div>
+                    <h3>Саскэ Учиха</h3>
+                    <p>Теневой близнец Наруто. Последний Учиха. Владеет Шаринганом и Риннеганом.</p>
+                    <span class="char-tag">Ниндзя</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#e91e63">С</div>
+                    <h3>Сакура Харуно</h3>
+                    <p>Целительница. Ученица Тсунаде. Сильнейший медицинский ниндзя.</p>
+                    <span class="char-tag">Медик</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#455a64">К</div>
+                    <h3>Какаши Хатакэ</h3>
+                    <p>Капитан отряда 7. Копирующий ниндзя. Владеет Шаринганом.</p>
+                    <span class="char-tag">Капитан</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#7b1fa2">Т</div>
+                    <h3>Тсунаде</h3>
+                    <p>Пятый Хокаге. Легендарный медицинский ниндзя. Внучка Первого Хокаге.</p>
+                    <span class="char-tag">Хокаге</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1b5e20">Д</div>
+                    <h3>Джирайя</h3>
+                    <p>Эрмит Жаба. Учитель Наруто. Один из трёх легендарных саннинов.</p>
+                    <span class="char-tag">Саннин</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#b71c1c">И</div>
+                    <h3>Итач Учиха</h3>
+                    <p>Старший брат Саскэ. Убил клан ради мира. Один из сильнейших ниндзя.</p>
+                    <span class="char-tag">Антигерой</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#006064">М</div>
+                    <h3>Мадара Учиха</h3>
+                    <p>Основатель Конохи. Главный злодей Шиппудена. Мечтает о Миру Вечного Сна.</p>
+                    <span class="char-tag">Антагонист</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <img src="{{ url_for('static', filename='narutoSharingan.svg') }}" alt="Шаринган" class="section-image" style="max-width:300px">
+            <img src="{{ url_for('static', filename='naruto_rasengan.svg') }}" alt="Расенган" class="section-image" style="max-width:300px">
+        </section>
+
+        <section>
+            <h2>Система сил</h2>
+            <dl>
+                <dt>Тайдзюцу</dt>
+                <dd>Ближний бой. Искусство рукопашного боя, усиленное ци.</dd>
+
+                <dt>Нин-дзюцу</dt>
+                <dd>Техники ниндзя: огненные шары, клоны, элементальные атаки.</dd>
+
+                <dt>Гендзюцу</dt>
+                <dd>Иллюзии. Контроль разума противника.</dd>
+
+                <dt>Кеккай Гэнкай</dt>
+                <dd>Кровное ограничение. Уникальные способности кланов (Шаринган, Бьякуган).</dd>
+
+                <dt>Тailed Beast Power</dt>
+                <dd>Сила хвостатых зверей. В каждой деревне запечатан по одному.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <img src="{{ url_for('static', filename='naruto_kurama.svg') }}" alt="Кьюби" class="section-image">
+        </section>
+
+        <section>
+            <h2>Мир Наруто</h2>
+            <ul>
+                <li><strong>Коноха</strong> — Деревня Скрытого Листа (Главная)</li>
+                <li><strong>Сунагакуре</strong> — Деревня Скрытого Песка</li>
+                <li><strong>Киригакуре</strong> — Деревня Скрытого Тумана</li>
+                <li><strong>Кумогакуре</strong> — Деревня Скрытого Облака</li>
+                <li><strong>Ивагакуре</strong> — Деревня Скрытого Камня</li>
+                <li><strong>Аматэрасу</strong> — Мир ниндзя</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Продукция</h2>
+            <ul>
+                <li><strong>Манга:</strong> 72 тома (1999–2014), продано более 250 млн копий</li>
+                <li><strong>Аниме:</strong> 220 серий (Наруто) + 500 серий (Шиппуден)</li>
+                <li><strong>Фильмы:</strong> 11 полнометражных</li>
+                <li><strong>Боруто:</strong> Сиквел — сын Наруто</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Где смотреть</h2>
+            <ul>
+                <li><strong>Crunchyroll</strong> — все серии</li>
+                <li><strong>AniLibria</strong> — русская озвучка</li>
+                <li><strong>Netflix</strong> — некоторые фильмы</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

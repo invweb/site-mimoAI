@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блич (Bleach)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+        <a href="/totoro">Тоторо</a>
+        <a href="/bleach">Блич</a>
+        <a href="/onepiece">One Piece</a>
+        <a href="/ghibli">Ghibli</a>
+        <a href="/naruto">Наруто</a>
+    </nav>
+    <main>
+        <h1>Блич (Bleach)</h1>
+        <img src="{{ url_for('static', filename='bleach_hero.svg') }}" alt="Блич" class="hero-image">
+        <p class="subtitle">Манга Тайто Кубо и её аниме-экранизация</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, городское фэнтези</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Тайто Кубо</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Studio Pierrot</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2001–2016, 74 тома</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2004–2012, 366 серий</span></div>
+                <div class="info-card"><span class="info-label">Продолжение</span><span class="info-value">2022–наст. время</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p>Действие происходит в современной Японии. Пятнадцатилетний школьник <strong>Ичиго Куросаки</strong>, способный видеть духов, знакомится с девушкой-шинигами <strong>Рукией Кучики</strong>. В битве с «пустым» (злым духом) Рукия передаёт Ичиго свои силы, и он сам становится проводником душ (синигами).</p>
+            <p>Ичиго вынужден сражаться с пустыми, защищать людей и отправлять души умерших в загробный мир — <strong>Сообщество душ</strong>.</p>
+        </section>
+
+        <section>
+            <h2>Основные арки</h2>
+            <dl>
+                <dt>Арка 1: Начало</dt>
+                <dd>Знакомство Ичиго с Рукией и миром синигами. Первая битва с пустыми.</dd>
+
+                <dt>Арка 2: Сообщество душ</dt>
+                <dd>Рукию арестовывают. Ичиго и друзья проникают в Сообщество душ, чтобы её спасти. Раскрывается заговор Айдзэна.</dd>
+
+                <dt>Арка 3: Арранкары</dt>
+                <dd>Война между Айдзэном и Сообществом душ. Ичиго теряет свои силы.</dd>
+
+                <dt>Арка 4: Подчинители</dt>
+                <dd>Через 1.5 года Ичиго сталкивается с организацией «X-cution» и осваивает новую способность.</dd>
+
+                <dt>Арка 5: Тысячелетняя кровавая война</dt>
+                <dd>Квинси во главе с Яхве объявляют войну Сообществу душ. Финальная битва.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ff6f00">И</div>
+                    <h3>Ичиго Куросаки</h3>
+                    <p>Главный герой. Пятнадцатилетний школьник, ставший синигами. Несёт косу Зангецу.</p>
+                    <span class="char-tag">Синигами</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#7b1fa2">Р</div>
+                    <h3>Рукия Кучики</h3>
+                    <p>Проводник душ из благородного клана Кучики. Передала свои силы Ичиго.</p>
+                    <span class="char-tag">Проводник душ</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">А</div>
+                    <h3>Соскэ Айдзэн</h3>
+                    <p>Центральный антагонист. Бывший капитан, предавший Сообщество душ.</p>
+                    <span class="char-tag">Антагонист</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">У</div>
+                    <h3>Урю Исида</h3>
+                    <p>Последний квинси. Изначально враг Ичиго, позже союзник.</p>
+                    <span class="char-tag">Квинси</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Мир Блич</h2>
+            <ul>
+                <li><strong>Земной мир</strong> — современная Япония, город Каракура</li>
+                <li><strong>Сообщество душ</strong> — загробный мир, где живут проводники душ</li>
+                <li><strong>Уэко Мундо</strong> — мир пустых, пустынная область с вечной ночью</li>
+                <li><strong>Вейсвельт</strong> — мир квинси</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Продукция</h2>
+            <ul>
+                <li><strong>Манга:</strong> 74 тома (2001–2016), продано более 130 млн копий</li>
+                <li><strong>Аниме-сериал:</strong> 366 серий (2004–2012)</li>
+                <li><strong>Продолжение:</strong> «Тысячелетняя кровавая война» (2022–наст. время)</li>
+                <li><strong>Фильмы:</strong> 4 анимационных + 1 игровой (2018)</li>
+                <li><strong>Мюзикл:</strong> Several stage musicals</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Где смотреть</h2>
+            <ul>
+                <li><strong>Crunchyroll</strong> — все серии</li>
+                <li><strong>Netflix</strong> — игровой фильм</li>
+                <li><strong>AniLibria</strong> — русская озвучка</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какой ты зоаноид? — Гайвер</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+    </nav>
+    <main>
+        <h1>Какой ты зоаноид?</h1>
+        <p class="subtitle">Пройди тест и узнай, кем ты стал бы во вселенной Гайвера</p>
+
+        <div id="quiz-container">
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar" id="progress-bar"></div>
+                <span id="progress-text">Вопрос 1 из 7</span>
+            </div>
+
+            <div class="quiz-question" id="question-1">
+                <h2>1. Как ты реагируешь на опасность?</h2>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-q="1" data-value="a">Бросаюсь первым — действовать важнее</button>
+                    <button class="quiz-option" data-q="1" data-value="b">Анализирую ситуацию и ищу слабое место</button>
+                    <button class="quiz-option" data-q="1" data-value="c">Ухожу, чтобы вернуться с силами</button>
+                    <button class="quiz-option" data-q="1" data-value="d">Испугаюсь, но попробую выжить</button>
+                </div>
+            </div>
+
+            <div class="quiz-question hidden" id="question-2">
+                <h2>2. Что для тебя важнее?</h2>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-q="2" data-value="a">Сила и доминирование</button>
+                    <button class="quiz-option" data-q="2" data-value="b">Стратегия и контроль</button>
+                    <button class="quiz-option" data-q="2" data-value="c">Скорость и мобильность</button>
+                    <button class="quiz-option" data-q="2" data-value="d">Защита близких</button>
+                </div>
+            </div>
+
+            <div class="quiz-question hidden" id="question-3">
+                <h2>3. Какое оружие тебе ближе?</h2>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-q="3" data-value="a">Тяжёлые клинки</button>
+                    <button class="quiz-option" data-q="3" data-value="b">Дальнобойные атаки</button>
+                    <button class="quiz-option" data-q="3" data-value="c">Когти и копыта</button>
+                    <button class="quiz-option" data-q="3" data-value="d">Щит и броня</button>
+                </div>
+            </div>
+
+            <div class="quiz-question hidden" id="question-4">
+                <h2>4. Где ты чувствуешь себя комфортно?</h2>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-q="4" data-value="a">В центре боя</button>
+                    <button class="quiz-option" data-q="4" data-value="b">На возвышенности, наблюдая</button>
+                    <button class="quiz-option" data-q="4" data-value="c">В подземельях и тоннелях</button>
+                    <button class="quiz-option" data-q="4" data-value="d">Среди своих</button>
+                </div>
+            </div>
+
+            <div class="quiz-question hidden" id="question-5">
+                <h2>5. Какой у тебя стиль боя?</h2>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-q="5" data-value="a">Сокрушительные удары</button>
+                    <button class="quiz-option" data-q="5" data-value="b">Тактические манёвры</button>
+                    <button class="quiz-option" data-q="5" data-value="c">Быстрые атаки и уклонения</button>
+                    <button class="quiz-option" data-q="5" data-value="d">Оборона и контратака</button>
+                </div>
+            </div>
+
+            <div class="quiz-question hidden" id="question-6">
+                <h2>6. Что тебя пугает?</h2>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-q="6" data-value="a">Потеря контроля</button>
+                    <button class="quiz-option" data-q="6" data-value="b">Неизвестность</button>
+                    <button class="quiz-option" data-q="6" data-value="c">Одиночество</button>
+                    <button class="quiz-option" data-q="6" data-value="d">Бессилие</button>
+                </div>
+            </div>
+
+            <div class="quiz-question hidden" id="question-7">
+                <h2>7. Какой исход ты считаешь лучшим?</h2>
+                <div class="quiz-options">
+                    <button class="quiz-option" data-q="7" data-value="a">Победа любой ценой</button>
+                    <button class="quiz-option" data-q="7" data-value="b">Победа с минимальными потерями</button>
+                    <button class="quiz-option" data-q="7" data-value="c">Побег и борьба завтра</button>
+                    <button class="quiz-option" data-q="7" data-value="d">Жертва ради других</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-result" class="hidden">
+            <h2 id="result-title"></h2>
+            <div id="result-content"></div>
+            <button class="quiz-restart" onclick="restartQuiz()">Пройти заново</button>
+        </div>
+    </main>
+
+    <script>
+        const answers = {};
+        let currentQuestion = 1;
+        const totalQuestions = 7;
+
+        document.querySelectorAll('.quiz-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const q = btn.dataset.q;
+                const v = btn.dataset.value;
+                answers[q] = v;
+
+                btn.parentElement.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+
+                if (currentQuestion < totalQuestions) {
+                    document.getElementById(`question-${currentQuestion}`).classList.add('hidden');
+                    currentQuestion++;
+                    document.getElementById(`question-${currentQuestion}`).classList.remove('hidden');
+                    updateProgress();
+                } else {
+                    showResult();
+                }
+            });
+        });
+
+        function updateProgress() {
+            const pct = (currentQuestion / totalQuestions) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+            document.getElementById('progress-text').textContent = `Вопрос ${currentQuestion} из ${totalQuestions}`;
+        }
+
+        function showResult() {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+
+            const counts = { a: 0, b: 0, c: 0, d: 0 };
+            Object.values(answers).forEach(v => counts[v]++);
+
+            const max = Math.max(...Object.values(counts));
+            const type = Object.keys(counts).find(k => counts[k] === max);
+
+            const results = {
+                a: {
+                    title: 'Ты — Грегель (Зоаноид типа-грегель)',
+                    desc: '<p><strong>Класс:</strong> Тяжёлый зоаноид</p><p><strong>Способности:</strong> Огромная физическая сила, толстая броня, способность поднимать тяжёлые объекты</p><p><strong>Характер:</strong> Ты прямолинеен и силён. Предпочитаешь решать проблемы ударом. Лидер в бою, но не стратег.</p><p><strong>Слабость:</strong> Низкая скорость, уязвимость для быстрых атак</p><p><strong>Роль в «Кронос»:</strong> Штурмовик, разрушитель барьеров</p>'
+                },
+                b: {
+                    title: 'Ты — Доргу (Зоалорд)',
+                    desc: '<p><strong>Класс:</strong> Зоалорд — высший зоаноид</p><p><strong>Способности:</strong> Ментальное управление зоаноидами, тактический интеллект, дальний бой</p><p><strong>Характер:</strong> Ты стратег и аналитик. Предпочитаешь побеждать умом, а не силой. Контролируешь ситуацию.</p><p><strong>Слабость:</strong> Физическая уязвимость в ближнем бою</p><p><strong>Роль в «Кронос»:</strong> Командир, стратег операций</p>'
+                },
+                c: {
+                    title: 'Ты — Тигранос (Зоаноид типа-тигр)',
+                    desc: '<p><strong>Класс:</strong> Лёгкий зоаноид</p><p><strong>Способности:</strong> Невероятная скорость, когти, прыжки на большие расстояния</p><p><strong>Характер:</strong> Ты быстр и непредсказуем. Предпочитаешь тактику «ударил — убежал». Охотник.</p><p><strong>Слабость:</strong> Слабая броня, низкая выносливость</p><p><strong>Роль в «Кронос»:</strong> Разведчик, ликвидатор</p>'
+                },
+                d: {
+                    title: 'Ты — Бṝозон (Зоаноид типа-медведь)',
+                    desc: '<p><strong>Класс:</strong> Средний зоаноид</p><p><strong>Способности:</strong> Сильная броня, регенерация, защитные барьеры</p><p><strong>Характер:</strong> Ты надёжен и защитен. Готов пожертвовать собой ради других. Верный союзник.</p><p><strong>Слабость:</strong> Низкая агрессивность, зависимость от группы</p><p><strong>Роль в «Кронос»:</strong> Защитник, телохранитель</p>'
+                }
+            };
+
+            document.getElementById('result-title').textContent = results[type].title;
+            document.getElementById('result-content').innerHTML = results[type].desc;
+        }
+
+        function restartQuiz() {
+            Object.keys(answers).forEach(k => delete answers[k]);
+            currentQuestion = 1;
+            document.getElementById('quiz-container').classList.remove('hidden');
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.querySelectorAll('.quiz-question').forEach((q, i) => {
+                q.classList.toggle('hidden', i !== 0);
+            });
+            document.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+            updateProgress();
+        }
+    </script>
+</body>
+</html>

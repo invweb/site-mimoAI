@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Где смотреть — Гайвер</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+    </nav>
+    <main>
+        <h1>Где легально посмотреть и прочитать</h1>
+        <p class="subtitle">Платформы по странам и форматам</p>
+
+        <section>
+            <h2>Манга</h2>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <h3>Япония</h3>
+                    <ul>
+                        <li><strong>Shonen Jump+</strong> — цифровое издание</li>
+                        <li><strong>Amazon JP</strong> — физические тома (от ¥460/том)</li>
+                        <li><strong>Rakuten Books</strong> — доставка по Японии</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h3>Россия / СНГ</h3>
+                    <ul>
+                        <li><strong>Manga.Point</strong> — переводы на русский</li>
+                        <li><strong>ReadManga</strong> — фанатские переводы</li>
+                        <li><strong>Читаем.Манга</strong> — оцифрованные тома</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h3>США / Европа</h3>
+                    <ul>
+                        <li><strong>Viz Media</strong> — английский перевод (от $9.99/том)</li>
+                        <li><strong>Amazon</strong> — физические и цифровые тома</li>
+                        <li><strong>Comixology</strong> — цифровые выпуски</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Аниме</h2>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <h3>Япония</h3>
+                    <ul>
+                        <li><strong>Crunchyroll</strong> — стриминг (подписка ¥990/мес)</li>
+                        <li><strong>Bilibili</strong> — бесплатные серии с рекламой</li>
+                        <li><strong>Amazon Prime JP</strong> — в подписке</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h3>Россия / СНГ</h3>
+                    <ul>
+                        <li><strong>AniLibria</strong> — бесплатный стриминг</li>
+                        <li><strong>AnimeVost</strong> — озвучка на русском</li>
+                        <li><strong>Wakanim</strong> — лицензированный контент</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h3>США / Европа</h3>
+                    <ul>
+                        <li><strong>Crunchyroll</strong> — подписка $7.99/мес</li>
+                        <li><strong>Funimation</strong> — дубляж и субтитры</li>
+                        <li><strong>Amazon Prime</strong> — отдельные серии</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Фильмы с живыми актёрами</h2>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <h3>Стриминг</h3>
+                    <ul>
+                        <li><strong>Amazon Prime</strong> — The Guyver (1991), Dark Hero (1994)</li>
+                        <li><strong>Tubi</strong> — бесплатный стриминг с рекламой</li>
+                        <li><strong>Pluto TV</strong> — бесплатный</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h3>Физические носители</h3>
+                    <ul>
+                        <li><strong>Blu-ray</strong> — Arrow Video (лиминированное издание)</li>
+                        <li><strong>DVD</strong> —ioneer Entertainment</li>
+                        <li><strong>Amazon</strong> — от $15 за DVD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>OVA (1986, 1989–1992)</h2>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <h3>Цифровые</h3>
+                    <ul>
+                        <li><strong>Amazon Prime</strong> — The Guyver: Bio-Booster Armor</li>
+                        <li><strong>YouTube</strong> — отдельные серии (официальный канал)</li>
+                        <li><strong>HIDIVE</strong> — подписка $4.99/мес</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h3>Физические</h3>
+                    <ul>
+                        <li><strong>Discotek Media</strong> — лицензированное Blu-ray издание</li>
+                        <li><strong>Amazon</strong> — DVD-коллекции</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Цены и форматы</h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Формат</th>
+                            <th>Япония</th>
+                            <th>Россия</th>
+                            <th>США/Европа</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="row-header">Манга (1 том)</td>
+                            <td>¥460 (~$3)</td>
+                            <td>300–500₽ (~$3–5)</td>
+                            <td>$9.99</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">Аниме (стриминг)</td>
+                            <td>¥990/мес (~$7)</td>
+                            <td>Бесплатно / 200₽/мес</td>
+                            <td>$7.99/мес</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">Фильм (DVD)</td>
+                            <td>¥3,000 (~$20)</td>
+                            <td>800–1,500₽ (~$8–15)</td>
+                            <td>$15–25</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">Фильм (Blu-ray)</td>
+                            <td>¥5,000 (~$35)</td>
+                            <td>2,000–3,000₽ (~$20–30)</td>
+                            <td>$25–40</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">OVA (Blu-ray)</td>
+                            <td>¥8,000 (~$55)</td>
+                            <td>3,000–5,000₽ (~$30–50)</td>
+                            <td>$40–60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Рекомендации</h2>
+            <ul>
+                <li><strong>Для манги:</strong> Viz Media (англ.) или Manga.Point (рус.) — легальные переводы</li>
+                <li><strong>Для аниме:</strong> Crunchyroll или AniLibria — большой выбор серий</li>
+                <li><strong>Для фильмов:</strong> Amazon Prime или Tubi — доступно бесплатно</li>
+                <li><strong>Для коллекционеров:</strong> Arrow Video Blu-ray — лучшее качество</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

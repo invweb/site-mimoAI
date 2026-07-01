@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта лора — Гайвер</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+    </nav>
+    <main>
+        <h1>Карта лора Гайвера</h1>
+        <p class="subtitle">Быстрый справочник: кто есть кто и как всё связано</p>
+
+        <div class="lore-map">
+            <div class="lore-center">
+                <div class="lore-node god" id="creators">
+                    <h3>Создатели</h3>
+                    <p>Древняя раса пришельцев</p>
+                </div>
+            </div>
+
+            <div class="lore-connections">
+                <div class="lore-node government" id="zoaforth">
+                    <h3>Зоафорт</h3>
+                    <p>База Создателей. Хранилище всех био-бронь</p>
+                    <span class="lore-link">создали →</span>
+                </div>
+
+                <div class="lore-node government" id="bio-weapons">
+                    <h3>Био-оружие</h3>
+                    <p>Гайвер, Гайвер-Экзекушнер и другие устройства</p>
+                </div>
+
+                <div class="lore-node villain" id="chronos">
+                    <h3>«Кронос»</h3>
+                    <p>Тайная корпорация. Цель — мировое господство</p>
+                    <span class="lore-link">использует →</span>
+                </div>
+
+                <div class="lore-node villain" id="zoanoids">
+                    <h3>Зоаноиды</h3>
+                    <p>Генетически модифицированные люди. Трансформируются в монстров</p>
+                    <span class="lore-link">создали →</span>
+                </div>
+
+                <div class="lore-node villain" id="zolords">
+                    <h3>Зоалорды</h3>
+                    <p>Высшие зоаноиды. Ментально управляют другими</p>
+                    <span class="lore-link">управляют →</span>
+                </div>
+
+                <div class="lore-node hero" id="guyver">
+                    <h3>Гайвер</h3>
+                    <p>Симбиотическая био-броня. Усиливает носителя в сотни раз</p>
+                </div>
+
+                <div class="lore-node hero" id="sho">
+                    <h3>Сё Фукамати</h3>
+                    <p>Носитель Гайвера. Подросток, ставший воином</p>
+                    <span class="lore-link">носит →</span>
+                </div>
+
+                <div class="lore-node hero" id="zxt">
+                    <h3>ZX-T Memo / Гайвер III</h3>
+                    <p>Модификация Гайвера. Усиленные возможности</p>
+                </div>
+
+                <div class="lore-node neutral" id="alkanfel">
+                    <h3>Алканфель</h3>
+                    <p>Глава зоалордов. Один из сильнейших зоаноидов</p>
+                </div>
+
+                <div class="lore-node neutral" id="agamemnon">
+                    <h3>Агамемнон</h3>
+                    <p>Второй носитель Гайвера. Зоалорд</p>
+                    <span class="lore-link">носил →</span>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Иерархия сил</h2>
+            <div class="hierarchy">
+                <div class="hierarchy-level">
+                    <span class="level-label">Уровень 1</span>
+                    <div class="hierarchy-items">
+                        <span class="h-item god">Создатели</span>
+                    </div>
+                </div>
+                <div class="hierarchy-arrow">↓</div>
+                <div class="hierarchy-level">
+                    <span class="level-label">Уровень 2</span>
+                    <div class="hierarchy-items">
+                        <span class="h-item government">Зоафорт</span>
+                        <span class="h-item government">Био-оружие (Гайвер)</span>
+                    </div>
+                </div>
+                <div class="hierarchy-arrow">↓</div>
+                <div class="hierarchy-level">
+                    <span class="level-label">Уровень 3</span>
+                    <div class="hierarchy-items">
+                        <span class="h-item villain">«Кронос»</span>
+                        <span class="h-item villain">Зоалорды</span>
+                    </div>
+                </div>
+                <div class="hierarchy-arrow">↓</div>
+                <div class="hierarchy-level">
+                    <span class="level-label">Уровень 4</span>
+                    <div class="hierarchy-items">
+                        <span class="h-item villain">Зоаноиды</span>
+                    </div>
+                </div>
+                <div class="hierarchy-arrow">↕</div>
+                <div class="hierarchy-level">
+                    <span class="level-label">Противостояние</span>
+                    <div class="hierarchy-items">
+                        <span class="h-item hero">Гайвер (Сё)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ключевые связи</h2>
+            <ul>
+                <li><strong>Создатели → Гайвер:</strong> Создали био-броню как оружие подавления</li>
+                <li><strong>Создатели → Зоаноиды:</strong> Создали предков зоаноидов как рабочую силу</li>
+                <li><strong>«Кронос» → Зоаноиды:</strong> Усовершенствовали технологию Создателей</li>
+                <li><strong>«Кронос» → Гайвер:</strong> Пытаются контролировать, но Гайвер не подчиняется</li>
+                <li><strong>Зоалорды → Зоаноиды:</strong> Ментально управляют иерархией</li>
+                <li><strong>Сё → Гайвер:</strong> Симбиотическая связь. Гайвер защищает Сё, Сё активирует Гайвер</li>
+                <li><strong>Агамемнон → Гайвер:</strong> Второй носитель. Враг Сё</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Расы и фракции</h2>
+            <dl>
+                <dt class="god-text">Создатели (Adventurers)</dt>
+                <dd>Древняя раса пришельцев. Создали Гайвер и предков зоаноидов. Цель — колонизация Земли.</dd>
+
+                <dt class="villain-text">«Кронос»</dt>
+                <dd>Глобальная тайная организация. Управляется зоалордами. Планирует мировое господство через армию зоаноидов.</dd>
+
+                <dt class="hero-text">Сё Фукамати и союзники</dt>
+                <dd>Подросток с Гайвером и его друзья. Защищают человечество от «Кронос» и Создателей.</dd>
+            </dl>
+        </section>
+    </main>
+</body>
+</html>

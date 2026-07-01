@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  <!-- Nine-tails silhouette -->
+  <ellipse cx="200" cy="180" rx="80" ry="70" fill="#ff6f00" opacity="0.8"/>
+  <circle cx="200" cy="120" r="40" fill="#ff6f00" opacity="0.8"/>
+  <!-- Tails -->
+  <path d="M120,180 Q60,120 80,60" stroke="#ff6f00" stroke-width="8" fill="none" opacity="0.6"/>
+  <path d="M140,170 Q80,110 100,50" stroke="#ff6f00" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M160,165 Q110,100 130,40" stroke="#ff6f00" stroke-width="8" fill="none" opacity="0.8"/>
+  <path d="M200,160 Q200,80 200,20" stroke="#ff6f00" stroke-width="8" fill="none" opacity="0.9"/>
+  <path d="M240,165 Q290,100 270,40" stroke="#ff6f00" stroke-width="8" fill="none" opacity="0.8"/>
+  <path d="M260,170 Q320,110 300,50" stroke="#ff6f00" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M280,180 Q340,120 320,60" stroke="#ff6f00" stroke-width="8" fill="none" opacity="0.6"/>
+  <!-- Eyes -->
+  <circle cx="185" cy="115" r="8" fill="#c62828"/>
+  <circle cx="215" cy="115" r="8" fill="#c62828"/>
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui" font-size="16" fill="#fff" font-weight="bold">Кьюби — Девятихвостый</text>
+</svg>

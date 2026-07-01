@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея трансформаций — Гайвер</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+    </nav>
+    <main>
+        <h1>Галерея трансформаций</h1>
+        <p class="subtitle">Эволюция брони: от базовой формы к финальным</p>
+
+        <div class="gallery-controls">
+            <button class="gallery-filter active" data-stage="all">Все формы</button>
+            <button class="gallery-filter" data-stage="base">Базовая</button>
+            <button class="gallery-filter" data-stage="enhanced">Усиленная</button>
+            <button class="gallery-filter" data-stage="final">Финальная</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-stage="base">
+                <div class="gallery-placeholder">
+                    <span class="gallery-num">01</span>
+                </div>
+                <h3>Базовая форма Гайвера</h3>
+                <p class="gallery-desc">Стандартный режим активации. Броня покрывает всё тело.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag">Усиление силы ×100</span>
+                    <span class="ability-tag">Космический меч</span>
+                    <span class="ability-tag">Контрольное ядро</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="base">
+                <div class="gallery-placeholder">
+                    <span class="gallery-num">02</span>
+                </div>
+                <h3>Контрольное ядро</h3>
+                <p class="gallery-desc">Устройство управления бронёй. Уязвимость Гайвера.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag weak">Уязвимость</span>
+                    <span class="ability-tag">Управление бронёй</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="enhanced">
+                <div class="gallery-placeholder enhanced">
+                    <span class="gallery-num">03</span>
+                </div>
+                <h3>Высокочастотный клинок</h3>
+                <p class="gallery-desc">Космический меч в расширенном режиме. Разрезает любую материю.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag power">Разрезает сталь</span>
+                    <span class="ability-tag">Энергетическое лезвие</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="enhanced">
+                <div class="gallery-placeholder enhanced">
+                    <span class="gallery-num">04</span>
+                </div>
+                <h3>Мега-удар</h3>
+                <p class="gallery-desc">Энергетический выстрел из головного рога. Сокрушительная мощь.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag power">Дальность: 500м</span>
+                    <span class="ability-tag power">Мощность: снос здания</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="enhanced">
+                <div class="gallery-placeholder enhanced">
+                    <span class="gallery-num">05</span>
+                </div>
+                <h3>Ультразвуковой рёв</h3>
+                <p class="gallery-desc">Звуковая волна, сбивающая врагов с ног и разрушающая барьеры.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag">Обездвиживание</span>
+                    <span class="ability-tag">Разрушение барьеров</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="enhanced">
+                <div class="gallery-placeholder enhanced">
+                    <span class="gallery-num">06</span>
+                </div>
+                <h3>Регенерация</h3>
+                <p class="gallery-desc">Быстрое восстановление повреждений брони и тела.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag power">Регенерация за секунды</span>
+                    <span class="ability-tag">Восстановление конечностей</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="final">
+                <div class="gallery-placeholder final">
+                    <span class="gallery-num">07</span>
+                </div>
+                <h3>Гайвер III (ZX-T Memo)</h3>
+                <p class="gallery-desc">Модификация с улучшенным ядром. Новые возможности.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag power">Усиленное контрольное ядро</span>
+                    <span class="ability-tag power">Новые атаки</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="final">
+                <div class="gallery-placeholder final">
+                    <span class="gallery-num">08</span>
+                </div>
+                <h3>Гайвер-Экзекушнер</h3>
+                <p class="gallery-desc">Боевой тип, созданный Создателями для подавления мятежников.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag power">Усиленная броня</span>
+                    <span class="ability-tag power">Дополнительное оружие</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-stage="final">
+                <div class="gallery-placeholder final">
+                    <span class="gallery-num">09</span>
+                </div>
+                <h3>Гайвер XIII (Оригинал)</h3>
+                <p class="gallery-desc">Первый Гайвер, созданный Создателями. Образец для всех остальных.</p>
+                <div class="gallery-abilities">
+                    <span class="ability-tag power">Абсолютная мощь</span>
+                    <span class="ability-tag power">Историческое значение</span>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Эволюция мощности</h2>
+            <div class="power-scale">
+                <div class="power-bar">
+                    <div class="power-fill" style="width: 30%">
+                        <span>Базовая</span>
+                    </div>
+                </div>
+                <div class="power-bar">
+                    <div class="power-fill enhanced-fill" style="width: 60%">
+                        <span>Усиленная</span>
+                    </div>
+                </div>
+                <div class="power-bar">
+                    <div class="power-fill final-fill" style="width: 95%">
+                        <span>Финальная</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.gallery-filter').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.gallery-filter').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const stage = btn.dataset.stage;
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (stage === 'all' || item.dataset.stage === stage) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

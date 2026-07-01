@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#fce4ec"/>
+  <!-- Konoha village -->
+  <!-- Mountain -->
+  <polygon points="200,50 100,200 300,200" fill="#78909c"/>
+  <polygon points="250,80 170,200 330,200" fill="#90a4ae"/>
+  <!-- Faces on mountain -->
+  <circle cx="170" cy="140" r="15" fill="#546e7a"/>
+  <circle cx="210" cy="130" r="15" fill="#546e7a"/>
+  <circle cx="250" cy="140" r="15" fill="#546e7a"/>
+  <!-- Buildings -->
+  <rect x="80" y="200" width="30" height="40" fill="#8d6e63"/>
+  <rect x="130" y="210" width="25" height="30" fill="#a1887f"/>
+  <rect x="240" y="205" width="28" height="35" fill="#8d6e63"/>
+  <rect x="290" y="210" width="25" height="30" fill="#a1887f"/>
+  <!-- Trees -->
+  <circle cx="60" cy="190" r="15" fill="#4caf50"/>
+  <circle cx="340" cy="190" r="15" fill="#4caf50"/>
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui" font-size="16" fill="#333" font-weight="bold">Коноха — Деревня Скрытого Листа</text>
+</svg>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece — Большой куш</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/guyver">Гайвер</a>
+        <a href="/totoro">Тоторо</a>
+        <a href="/bleach">Блич</a>
+        <a href="/onepiece">One Piece</a>
+        <a href="/ghibli">Ghibli</a>
+        <a href="/naruto">Наруто</a>
+    </nav>
+    <main>
+        <h1>One Piece — Большой куш</h1>
+        <img src="{{ url_for('static', filename='onepiece_hero.svg') }}" alt="One Piece" class="hero-image">
+        <p class="subtitle">Сёнэн-манга Эйитиро Оды — самая продаваемая манга в мире</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Приключения, фэнтези, комедия</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Эйитиро Ода</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Toei Animation</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">1997–наст. время, 113 томов</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">1999–наст. время, 1168 серий</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 516 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Манки Д. Луффи</strong> — мальчик, мечтający стать Королём пиратов. В детстве случайно съев Дьявольский плод Резина-Резина, он получил способность растягиваться как резина, но потерял способность плавать.</p>
+            <p>Спустя 10 лет Луффи отправляется в плавание и собирает команду <strong>«Пираты Соломенной Шляпы»</strong>. Вместе они ищут легендарное сокровище <strong>«One Piece»</strong>, спрятанное Королём пиратов Гол Д. Роджером.</p>
+            <p>Путешествие проходит через океан Ист-Блю, затем на течение <strong>Гранд-Лайн</strong> — самое опасное течение в мире, где обычные компасы не работают.</p>
+        </section>
+
+        <section>
+            <h2>Пираты Соломенной Шляпы</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Л</div>
+                    <h3>Манки Д. Луффи</h3>
+                    <p>Капитан. Мечтает стать Королём пиратов. Съел плод Гому-Гому (Резина).</p>
+                    <span class="char-tag">Капитан</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#2e7d32">З</div>
+                    <h3>Ророноа Зоро</h3>
+                    <p>Мечник. Использует три меча. Мечтает стать лучшим мечником в мире.</p>
+                    <span class="char-tag">Мечник</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#e65100">Н</div>
+                    <h3>Нами</h3>
+                    <p>Штурман. Лучший навигатор. Мечтает нарисовать карту всего мира.</p>
+                    <span class="char-tag">Штурман</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#f9a825">У</div>
+                    <h3>Усопп</h3>
+                    <p>Снайпер. Лжец и изобретатель. Мечтает стать храбрым воином морей.</p>
+                    <span class="char-tag">Снайпер</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#4e342e">С</div>
+                    <h3>Винсмок Санджи</h3>
+                    <p>Кок. Боец ногами. Мечтает найти All Blue — легендарное море.</p>
+                    <span class="char-tag">Кок</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ad1457">Т</div>
+                    <h3>Тони Тони Чоппер</h3>
+                    <p>Врач. Говорящий олень, съевший плод Хира-Хира.</p>
+                    <span class="char-tag">Врач</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#283593">Р</div>
+                    <h3>Нико Робин</h3>
+                    <p>Археолог. Читает понеглифы — древние камни с секретами мира.</p>
+                    <span class="char-tag">Археолог</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#37474f">Ф</div>
+                    <h3>Фрэнки</h3>
+                    <p>Корабельный плотник. Киборг, строящий корабли.</p>
+                    <span class="char-tag">Плотник</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1b5e20">Б</div>
+                    <h3>Брук</h3>
+                    <p>Музыкант. Скелет, играющий на скрипке.</p>
+                    <span class="char-tag">Музыкант</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#0d47a1">Д</div>
+                    <h3>Дзимбэ</h3>
+                    <p>Рыболюдь-кунгфуист. Бывший Великий корсар.</p>
+                    <span class="char-tag">Рыболюдь</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Система сил</h2>
+            <dl>
+                <dt>Дьявольские плоды</dt>
+                <dd>Плоды, дающие сверхъестественные способности. Три типа: Парамеция (тело), Зоан (животное), Логия (стихия). Съевший не может плавать.</dd>
+
+                <dt>Хаки (Сила духа)</dt>
+                <dd>Сила, существующая в каждом живом существе. Три типа: созерцателей (предвидение), воителей (броня), покорителей (врождённая сила).</dd>
+
+                <dt>Морской камень</dt>
+                <dd>Минерал, нейтрализующий силу Дьявольских плодов. Используется в оружии и тюрьмах.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Мир One Piece</h2>
+            <ul>
+                <li><strong>Ист-Блю</strong> — восточный океан, начало путешествия</li>
+                <li><strong>Гранд-Лайн</strong> — опасное течение, где спрятан One Piece</li>
+                <li><strong>Ред-Лайн</strong> — суперконтинент, опоясывающий планету</li>
+                <li><strong>Новый свет</strong> — вторая половина Гранд-Лайн, территория Императоров</li>
+                <li><strong>Скайпия</strong> — небесный остров</li>
+                <li><strong>Рыболюдий остров</strong> — мир подводных обитателей</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Политические силы</h2>
+            <ul>
+                <li><strong>Мировое правительство</strong> — контролирует почти весь мир</li>
+                <li><strong>Морской Дозор</strong> — военная сила правительства</li>
+                <li><strong>7 Великих корсаров</strong> — пираты на службе правительства</li>
+                <li><strong>4 Императора морей</strong> — сильнейшие пираты Нового света</li>
+                <li><strong>Революционная армия</strong> — борется против Мирового правительства</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Рекорды</h2>
+            <ul>
+                <li>Самая продаваемая манга в мире — более 516 млн копий</li>
+                <li>Самый длинный сериал от одного автора</li>
+                <li>Первый тираж 74-го тома: 4,05 млн — рекорд Японии</li>
+                <li>100 млн проданных копий быстрее любой другой манги</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Где смотреть</h2>
+            <ul>
+                <li><strong>Crunchyroll</strong> — все серии (подписка)</li>
+                <li><strong>AniLibria</strong> — русская озвучка (бесплатно)</li>
+                <li><strong>Netflix</strong> — живой сериал</li>
+                <li><strong>Film: Red, Film: Gold, Stampede</strong> — полнометражные фильмы</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
