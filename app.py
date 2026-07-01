@@ -15,6 +15,10 @@ def about():
 def anime():
     return render_template('anime.html', title='Аниме')
 
+@app.route('/search')
+def search():
+    return render_template('search.html', title='Поиск аниме')
+
 @app.route('/guyver')
 def guyver():
     return render_template('guyver.html', title='Гайвер')

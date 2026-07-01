@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск аниме</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Поиск аниме</h1>
+        <p class="subtitle">Найдите нужное аниме по названию</p>
+
+        <section>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Введите название аниме..." autofocus>
+                <button onclick="search()">Найти</button>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Все аниме на сайте</h2>
+            <div class="anime-list" id="animeList">
+                <a href="/guyver" class="anime-item" data-name="гайвер guyver био-броня зоаноиды такая">
+                    <div class="anime-item-icon" style="background:#e94560">G</div>
+                    <div class="anime-item-info">
+                        <h3>Гайвер (Guyver)</h3>
+                        <p>Био-броня, зоаноиды, корпорация «Кронос». Манга, аниме и фильмы.</p>
+                        <span class="anime-item-tags">Манга • OVA • Аниме • Фильмы</span>
+                    </div>
+                </a>
+
+                <a href="/totoro" class="anime-item" data-name="мой сосед тотаро тоторо my neighbor totoro студия гибли миядзаки">
+                    <div class="anime-item-icon" style="background:#4caf50">T</div>
+                    <div class="anime-item-info">
+                        <h3>Мой сосед Тоторо</h3>
+                        <p>Классика Studio Ghibli. История о двух сёстрах и лесном духе.</p>
+                        <span class="anime-item-tags">Фильм • Studio Ghibli • 1988</span>
+                    </div>
+                </a>
+
+                <a href="/bleach" class="anime-item" data-name="блич bleach синигами пустые квинси кубо ichigo rukia">
+                    <div class="anime-item-icon" style="background:#1565c0">B</div>
+                    <div class="anime-item-info">
+                        <h3>Блич (Bleach)</h3>
+                        <p>Синигами, пустые, квинси. Тайто Кубо. 74 тома манги.</p>
+                        <span class="anime-item-tags">Манга • Аниме • 366 серий</span>
+                    </div>
+                </a>
+
+                <a href="/onepiece" class="anime-item" data-name="one piece Большой куш луффи пираты соломенная шляпа ода">
+                    <div class="anime-item-icon" style="background:#0d47a1">O</div>
+                    <div class="anime-item-info">
+                        <h3>One Piece</h3>
+                        <p>Пираты Соломенной Шляпы. Самая продаваемая манга в мире.</p>
+                        <span class="anime-item-tags">Манга • Аниме • 1168 серий</span>
+                    </div>
+                </a>
+
+                <a href="/ghibli" class="anime-item" data-name="studio ghibli студия гибли миядзаки такахата тошио судзуки анимация">
+                    <div class="anime-item-icon" style="background:#2e7d32">S</div>
+                    <div class="anime-item-info">
+                        <h3>Studio Ghibli</h3>
+                        <p>Легендарная анимационная студия. 25 полнометражных фильмов.</p>
+                        <span class="anime-item-tags">Студия • Миядзаки • Такахата</span>
+                    </div>
+                </a>
+
+                <a href="/naruto" class="anime-item" data-name="наруто naruto узумаки ниндзя шаринган расенган кьюби хокаге коноха кисимото">
+                    <div class="anime-item-icon" style="background:#ff6f00">N</div>
+                    <div class="anime-item-info">
+                        <h3>Наруто (Naruto)</h3>
+                        <p>Ниндзя, тайдзюцу, кеккай гэнкай. Масаши Кисимото.</p>
+                        <span class="anime-item-tags">Манга • Аниме • 720 серий</span>
+                    </div>
+                </a>
+            </div>
+            <p id="noResults" style="display:none;color:#666;text-align:center;padding:2rem">Ничего не найдено</p>
+        </section>
+
+        <section>
+            <h2>Жанры</h2>
+            <div class="genre-tags">
+                <span class="genre-tag" onclick="filterByGenre('боевик')">Боевик</span>
+                <span class="genre-tag" onclick="filterByGenre('фэнтези')">Фэнтези</span>
+                <span class="genre-tag" onclick="filterByGenre('приключения')">Приключения</span>
+                <span class="genre-tag" onclick="filterByGenre('комедия')">Комедия</span>
+                <span class="genre-tag" onclick="filterByGenre('драма')">Драма</span>
+                <span class="genre-tag" onclick="filterByGenre('манга')">Манга</span>
+                <span class="genre-tag" onclick="filterByGenre('фильм')">Фильм</span>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const animeList = document.getElementById('animeList');
+        const noResults = document.getElementById('noResults');
+        const items = document.querySelectorAll('.anime-item');
+
+        searchInput.addEventListener('input', performSearch);
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+
+        function performSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            let found = 0;
+
+            items.forEach(item => {
+                const name = item.dataset.name;
+                const text = item.textContent.toLowerCase();
+                if (query === '' || name.includes(query) || text.includes(query)) {
+                    item.style.display = '';
+                    found++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            noResults.style.display = found === 0 ? 'block' : 'none';
+        }
+
+        function search() {
+            performSearch();
+        }
+
+        function filterByGenre(genre) {
+            searchInput.value = genre;
+            performSearch();
+        }
+    </script>
+</body>
+</html>
