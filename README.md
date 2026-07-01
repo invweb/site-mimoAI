@@ -10,10 +10,10 @@ A dynamic website built with Python Flask using MiMo AI assistant.
 ## Описание / Description
 
 ### Русский
-Сайт демонстрирует возможности AI-помощника в разработке. Включает два основных раздела с подробной информацией об аниме.
+Сайт демонстрирует возможности AI-помощника в разработке. Включает разделы с подробной информацией об аниме: Гайвер, Тоторо, Блич, One Piece, Studio Ghibli и Наруто.
 
 ### English
-The site demonstrates AI assistant capabilities in development. Features two main sections with detailed anime information.
+The site demonstrates AI assistant capabilities in development. Features sections with detailed anime information: Guyver, Totoro, Bleach, One Piece, Studio Ghibli and Naruto.
 
 ---
 
@@ -24,56 +24,75 @@ The site demonstrates AI assistant capabilities in development. Features two mai
 
 ### About (`/about`)
 - Информация о проекте MiMo AI / MiMo AI project information
-- Описание того, как ИИ помогает программистам / How AI helps developers
 
 ---
 
 ### Гайвер (`/guyver`) / Guyver (`/guyver`)
+Аниме-франшиза Ёсики Такая / Anime franchise by Yoshaki Takaya
 
-Раздел, посвящённый аниме-франшизе «Гайвер» (Guyver) — персонажу манги, аниме и фильмов Ёсики Такая.
-Dedicated to the Guyver anime franchise — manga, anime and film character by Yoshiki Takaya.
-
-#### Подразделы / Subsections:
-
-**Хронология** (`/guyver/chronology`) / **Chronology** (`/guyver/chronology`)
-- Интерактивная лента: манга → OVA → сериал → фильмы / Interactive timeline: manga → OVA → series → movies
-- Фильтрация по типу / Filter by type
-- Рекомендации «с чего начать» / «Where to start» recommendations
-
-**Сравнение версий** (`/guyver/comparison`) / **Version Comparison** (`/guyver/comparison`)
-- Таблица: манга vs аниме 2005 vs фильмы / Table: manga vs anime 2005 vs films
-- 9 аспектов сравнения / 9 comparison aspects
-
-**Карта лора** (`/guyver/lore`) / **Lore Map** (`/guyver/lore`)
-- Визуальная карта связей / Visual connection map
-- Иерархия сил / Power hierarchy
-
-**Галерея трансформаций** (`/guyver/gallery`) / **Transformation Gallery** (`/guyver/gallery`)
-- 9 форм брони / 9 armor forms
-- Фильтрация по стадии / Filter by stage
-
-**Какой ты зоаноид?** (`/guyver/quiz`) / **What Zoanoid Are You?** (`/guyver/quiz`)
-- Квиз из 7 вопросов / 7-question quiz
-- 4 результата / 4 results
-
-**Где смотреть** (`/guyver/legal`) / **Where to Watch** (`/guyver/legal`)
-- Платформы по странам / Platforms by country
-- Таблица цен / Price table
+- **Хронология** (`/guyver/chronology`) — Интерактивная лента / Interactive timeline
+- **Сравнение версий** (`/guyver/comparison`) — Таблица сравнения / Comparison table
+- **Карта лора** (`/guyver/lore`) — Визуальная карта связей / Visual map
+- **Галерея трансформаций** (`/guyver/gallery`) — 9 форм брони / 9 armor forms
+- **Какой ты зоаноид?** (`/guyver/quiz`) — Квиз / Quiz
+- **Где смотреть** (`/guyver/legal`) — Платформы / Platforms
 
 ---
 
 ### Мой сосед Тоторо (`/totoro`) / My Neighbor Totoro (`/totoro`)
+Фильм Studio Ghibli (1988) / Studio Ghibli film (1988)
 
-Раздел, посвящённый аниме-фильму Studio Ghibli «Мой сосед Тоторо» (1988).
-Dedicated to Studio Ghibli's «My Neighbor Totoro» (1988).
+- Обзор, сюжет, персонажи, факты / Overview, plot, characters, facts
 
-- **Обзор / Overview**: жанр, студия, режиссёр / genre, studio, director
-- **Сюжет / Plot**: полное описание истории / full story description
-- **Персонажи / Characters**: 8 карточек / 8 character cards
-- **О Тоторо / About Totoro**: три вида / three types
-- **Факты / Facts**: астероид, вид перипатуса / asteroid, peripatus species
-- **Саундтрек / Soundtrack**: Дзё Хисаиси / Joe Hisaishi
-- **Где посмотреть / Where to Watch**: Crunchyroll, Disney+, Amazon
+---
+
+### Блич (`/bleach`) / Bleach (`/bleach`)
+Манга Тайто Кубо / Manga by Tite Kubo
+
+- Обзор, сюжет (5 арк), персонажи, мир / Overview, plot (5 arcs), characters, world
+
+---
+
+### One Piece (`/onepiece`) / One Piece (`/onepiece`)
+Самая продаваемая манга в мире / Best-selling manga in the world
+
+- Обзор, сюжет, команда Луффи, система сил, мир, рекорды / Overview, plot, Luffy's crew, power system, world, records
+
+---
+
+### Studio Ghibli (`/ghibli`) / Studio Ghibli (`/ghibli`)
+Легендарная анимационная студия / Legendary animation studio
+
+- История, основатели, фильмы, достижения / History, founders, films, achievements
+
+---
+
+### Наруто (`/naruto`) / Naruto (`/naruto`)
+Манга Масаши Кисимото / Manga by Masashi Kishimoto
+
+- Обзор, сюжет, персонажи, система сил, мир / Overview, plot, characters, power system, world
+
+---
+
+## SVG-иллюстрации / SVG Illustrations
+
+Сайт использует собственные SVG-иллюстрации вместо фотографий:
+The site uses custom SVG illustrations instead of photos:
+
+| Файл / File | Раздел / Section |
+|---|---|
+| `guyver_hero.svg` | Гайвер / Guyver |
+| `guyver_main.svg` | Тоторо / Totoro |
+| `totoro_hero2.svg` | Тоторо / Totoro |
+| `bleach_hero.svg` | Блич / Bleach |
+| `onepiece_hero.svg` | One Piece |
+| `ghibli_hero.svg` | Studio Ghibli |
+| `naruto_hero.svg` | Наруто / Naruto |
+| `naruto_portrait.svg` | Наруто / Naruto |
+| `narutoSharingan.svg` | Шаринган / Sharingan |
+| `naruto_rasengan.svg` | Расенган / Rasengan |
+| `naruto_kurama.svg` | Кьюби / Kurama |
+| `naruto_konoha.svg` | Коноха / Konoha |
 
 ---
 
@@ -101,7 +120,18 @@ site/
 ├── static/
 │   ├── style.css             # Стили / Styles
 │   ├── guyver.jpg            # Картинка Гайвера / Guyver image
-│   └── totoro_main.svg       # SVG-иллюстрация / SVG illustration
+│   ├── guyver_hero.svg       # Hero-картинка / Hero image
+│   ├── totoro_main.svg       # SVG Тоторо / Totoro SVG
+│   ├── totoro_hero2.svg      # SVG Тоторо / Totoro SVG
+│   ├── bleach_hero.svg       # Hero Блича / Bleach hero
+│   ├── onepiece_hero.svg     # Hero One Piece
+│   ├── ghibli_hero.svg       # Hero Ghibli
+│   ├── naruto_hero.svg       # Hero Наруто / Naruto hero
+│   ├── naruto_portrait.svg   # Портрет Наруто / Naruto portrait
+│   ├── narutoSharingan.svg   # Шаринган / Sharingan
+│   ├── naruto_rasengan.svg   # Расенган / Rasengan
+│   ├── naruto_kurama.svg     # Кьюби / Kurama
+│   └── naruto_konoha.svg     # Коноха / Konoha
 └── templates/
     ├── index.html            # Главная / Home
     ├── about.html            # О проекте / About
@@ -112,7 +142,11 @@ site/
     ├── guyver_gallery.html
     ├── guyver_quiz.html
     ├── guyver_legal.html
-    └── totoro.html
+    ├── totoro.html           # Мой сосед Тоторо / My Neighbor Totoro
+    ├── bleach.html           # Блич / Bleach
+    ├── onepiece.html         # One Piece
+    ├── ghibli.html           # Studio Ghibli
+    └── naruto.html           # Наруто / Naruto
 ```
 
 ---
