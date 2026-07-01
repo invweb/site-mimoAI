@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#212121"/>
+  <!-- Chidori -->
+  <circle cx="200" cy="150" r="40" fill="#e3f2fd"/>
+  <circle cx="200" cy="150" r="30" fill="#bbdefb"/>
+  <circle cx="200" cy="150" r="20" fill="#fff"/>
+  <!-- Lightning bolts -->
+  <path d="M200,110 L190,130 L205,130 L195,150" stroke="#2196f3" stroke-width="2" fill="none"/>
+  <path d="M200,110 L210,130 L195,130 L205,150" stroke="#2196f3" stroke-width="2" fill="none"/>
+  <path d="M160,150 L180,140 L175,155 L195,150" stroke="#2196f3" stroke-width="2" fill="none"/>
+  <path d="M240,150 L220,140 L225,155 L205,150" stroke="#2196f3" stroke-width="2" fill="none"/>
+  <path d="M200,190 L190,170 L205,170 L195,150" stroke="#2196f3" stroke-width="2" fill="none"/>
+  <path d="M200,190 L210,170 L195,170 L205,150" stroke="#2196f3" stroke-width="2" fill="none"/>
+  <!-- Extra sparks -->
+  <circle cx="170" cy="120" r="2" fill="#64b5f6"/>
+  <circle cx="230" cy="120" r="2" fill="#64b5f6"/>
+  <circle cx="170" cy="180" r="2" fill="#64b5f6"/>
+  <circle cx="230" cy="180" r="2" fill="#64b5f6"/>
+  <text x="200" y="250" text-anchor="middle" font-family="system-ui" font-size="16" fill="#fff" font-weight="bold">Чидори — тысяча птиц</text>
+</svg>

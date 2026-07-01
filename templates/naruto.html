@@ -29,8 +29,10 @@
             </div>
         </section>
 
-        <section>
-            <img src="{{ url_for('static', filename='naruto_portrait.svg') }}" alt="Наруто Узумаки" class="section-image">
+        <section class="image-gallery">
+            <img src="{{ url_for('static', filename='naruto_portrait.svg') }}" alt="Наруто Узумаки">
+            <img src="{{ url_for('static', filename='naruto_hokage.svg') }}" alt="Монумент Хокаге">
+            <img src="{{ url_for('static', filename='naruto_konoha.svg') }}" alt="Коноха">
         </section>
 
         <section>
@@ -38,10 +40,6 @@
             <p><strong>Наруто Узумаки</strong> — ниндзя-подросток из деревни Коноха, мечтающий стать Хокаге — лидером деревни. В детстве в него запечатали <strong>Кьюби</strong> — Девятихвостого Лиса, демоническая сила, которая разрушила деревню.</p>
             <p>Из-за этого Наруто всю жизнь избегали жители деревни. Но он не сдался и доказал свою силу, защищая друзей и деревню.</p>
             <p>История разделена на две части: <strong>Наруто</strong> (подростковое путешествие) и <strong>Наруто Шиппуден</strong> (взрослая жизнь, битва с Мадарой и Кагуей).</p>
-        </section>
-
-        <section>
-            <img src="{{ url_for('static', filename='naruto_konoha.svg') }}" alt="Коноха" class="section-image">
         </section>
 
         <section>
@@ -99,8 +97,12 @@
         </section>
 
         <section>
-            <img src="{{ url_for('static', filename='narutoSharingan.svg') }}" alt="Шаринган" class="section-image" style="max-width:300px">
-            <img src="{{ url_for('static', filename='naruto_rasengan.svg') }}" alt="Расенган" class="section-image" style="max-width:300px">
+            <h2>Техники и способности</h2>
+            <div class="image-gallery">
+                <img src="{{ url_for('static', filename='naruto_rasengan.svg') }}" alt="Расенган">
+                <img src="{{ url_for('static', filename='naruto_chidori.svg') }}" alt="Чидори">
+                <img src="{{ url_for('static', filename='naruto_sage.svg') }}" alt="Режим мудреца">
+            </div>
         </section>
 
         <section>
@@ -118,13 +120,18 @@
                 <dt>Кеккай Гэнкай</dt>
                 <dd>Кровное ограничение. Уникальные способности кланов (Шаринган, Бьякуган).</dd>
 
-                <dt>Тailed Beast Power</dt>
-                <dd>Сила хвостатых зверей. В каждой деревне запечатан по одному.</dd>
+                <dt>Хвостатые звери</dt>
+                <dd>Девять могущественных существ, запечатанных в ниндзя. Кьюби — сильнейший из них.</dd>
             </dl>
         </section>
 
         <section>
-            <img src="{{ url_for('static', filename='naruto_kurama.svg') }}" alt="Кьюби" class="section-image">
+            <h2>Шаринган и его формы</h2>
+            <div class="image-gallery">
+                <img src="{{ url_for('static', filename='narutoSharingan.svg') }}" alt="Шаринган">
+                <img src="{{ url_for('static', filename='naruto_mangekyou.svg') }}" alt="Мангекё Шаринган">
+                <img src="{{ url_for('static', filename='naruto_kuramamode.svg') }}" alt="Режим Кьюби">
+            </div>
         </section>
 
         <section>

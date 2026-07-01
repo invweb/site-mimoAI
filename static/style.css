@@ -668,3 +668,17 @@ dd { margin-bottom: 0.5rem; }
     border-radius: 3px;
     font-size: 0.75rem;
 }
+
+/* Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
