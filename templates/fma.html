@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Стальной алхимик (Fullmetal Alchemist)</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Манга Хиромэ Аракавы и аниме-сериалы</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Приключения, драма, фэнтези</span></div>
                 <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Хиромэ Аракава</span></div>
@@ -31,13 +32,13 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="plot">Сюжет</h2>
             <p><strong>Эдвард</strong> и <strong>Альфонс Элрик</strong> — братья-алхимики, потерявшие части тела после неудачной попытки оживить мать. Эдвард потерял руки и ноги, а Альфонс потерял всё тело.</p>
             <p>Братья отправляются в путешествие, чтобы найти <strong>Философский камень</strong> — могущественный артефакт, способный вернуть им их тела. По пути они узнают тёмные тайны алхимии и сталкиваются с могущественным врагом.</p>
         </section>
 
         <section>
-            <h2>Персонажи</h2>
+            <h2 data-i18n="characters">Персонажи</h2>
             <div class="characters-grid">
                 <div class="character-card">
                     <div class="character-avatar" style="background:#c62828">Э</div>
@@ -81,7 +82,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/8/Fullmetal_Alchemist" target="_blank">MyAnimeList — Fullmetal Alchemist (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood" target="_blank">MyAnimeList — Fullmetal Alchemist: Brotherhood (аниме)</a></li>
@@ -91,9 +92,10 @@
             </ul>
         </section>
             <section>
-            <h2>Трейлер</h2>
+            <h2 data-i18n="trailer">Трейлер</h2>
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/__cd8Qww9WQ" title="FMA Brotherhood" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

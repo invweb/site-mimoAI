@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Дракон Болл (Dragon Ball)</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Манга Акиры Ториямы и аниме-сериал</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, приключения, комедия</span></div>
                 <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Акира Торияма</span></div>
@@ -31,13 +32,13 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="plot">Сюжет</h2>
             <p><strong>Гоку</strong> — мальчик с хвостом, обладающий невероятной силой. Он живёт вдали от цивилизации, пока не встречает <strong>Бульму</strong>, которая ищет <strong>Драконьи шары</strong> — семь магических сфер, выполняющих желание.</p>
             <p>Вместе с друзьями Гоку отправляется на поиски шаров, сражаясь с могущественными врагами. Со временем он узнаёт, что он来自 с планеты Сайя, и его ждут ещё более опасные испытания.</p>
         </section>
 
         <section>
-            <h2>Персонажи</h2>
+            <h2 data-i18n="characters">Персонажи</h2>
             <div class="characters-grid">
                 <div class="character-card">
                     <div class="character-avatar" style="background:#ff9800">Г</div>
@@ -85,7 +86,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/414/Dragon_Ball" target="_blank">MyAnimeList — Dragon Ball (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/813/Dragon_Ball" target="_blank">MyAnimeList — Dragon Ball (аниме)</a></li>
@@ -95,9 +96,10 @@
             </ul>
         </section>
             <section>
-            <h2>Трейлер</h2>
+            <h2 data-i18n="trailer">Трейлер</h2>
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/5FbVJnD5VkQ" title="Dragon Ball" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

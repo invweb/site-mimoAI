@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Мастера Меча Онлайн (Sword Art Online)</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Манга Рэки Кawahara и аниме-сериал</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Приключения, фэнтези, романтика</span></div>
                 <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Рэки Кawahara</span></div>
@@ -31,13 +32,13 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="plot">Сюжет</h2>
             <p><strong>Кирито</strong> — игрок-одиночка, застрявший в VRMMORPG «Sword Art Online». Создатель игры объявил, что игроки не смогут выйти, пока не пройдут 100 этажей башни.</p>
             <p>По пути Кирито встречает <strong>Асуну</strong> — сильную фехтовальщицу. Вместе они сражаются с монстрами и другими игроками, ища способ покинуть игру и спасти жизни тысяч людей.</p>
         </section>
 
         <section>
-            <h2>Персонажи</h2>
+            <h2 data-i18n="characters">Персонажи</h2>
             <div class="characters-grid">
                 <div class="character-card">
                     <div class="character-avatar" style="background:#1565c0">К</div>
@@ -83,7 +84,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/49509/Sword_Art_Online" target="_blank">MyAnimeList — Sword Art Online (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/11759/Sword_Art_Online" target="_blank">MyAnimeList — Sword Art Online (аниме)</a></li>
@@ -93,9 +94,10 @@
             </ul>
         </section>
             <section>
-            <h2>Трейлер</h2>
+            <h2 data-i18n="trailer">Трейлер</h2>
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/8B1D48STvxY" title="Sword Art Online" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

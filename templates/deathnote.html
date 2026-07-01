@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Тетрадь Смерти (Death Note)</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Манга Обы Тсугуми и Такэши Обаты и аниме-сериал</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Триллер, детектив, сверхъестественное</span></div>
                 <div class="info-card"><span class="info-label">Авторы</span><span class="info-value">Оба Тсугуми и Такэши Обата</span></div>
@@ -31,13 +32,13 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="plot">Сюжет</h2>
             <p><strong>Лайт Ягами</strong> — одарённый старшеклассник, находящий Тетрадь Смерти, упавшую из мира Shinigami. Записав имя человека в тетрадь, можно убить его.</p>
             <p>Лайт решает стать «богом нового мира», избавляя его от преступников. Против него выступает загадочный детектив <strong>L</strong>, стремящийся раскрыть личность убийцы. Между ними начинается интеллектуальная игра на жизнь и смерть.</p>
         </section>
 
         <section>
-            <h2>Персонажи</h2>
+            <h2 data-i18n="characters">Персонажи</h2>
             <div class="characters-grid">
                 <div class="character-card">
                     <div class="character-avatar" style="background:#c62828">Л</div>
@@ -83,7 +84,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/21/Death_Note" target="_blank">MyAnimeList — Death Note (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/1535/Death_Note" target="_blank">MyAnimeList — Death Note (аниме)</a></li>
@@ -93,9 +94,10 @@
             </ul>
         </section>
             <section>
-            <h2>Трейлер</h2>
+            <h2 data-i18n="trailer">Трейлер</h2>
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/N3tRFayqVtk" title="Death Note" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

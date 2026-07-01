@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Карта лора Гайвера</h1>
@@ -153,5 +154,6 @@
             </dl>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Истребитель демонов (Demon Slayer)</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Манга Койото Тогоси и аниме-сериал</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, сверхъестественное, историческое</span></div>
                 <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Койото Тогоси</span></div>
@@ -31,13 +32,13 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="plot">Сюжет</h2>
             <p><strong>Танджиро Камадо</strong> — старший брат из бедной семьи, живущий в горах. Однажды он возвращается домой и обнаруживает, что его семья вырезана демонами, а его младшая сестра <strong>Незуко</strong> превращена в демона.</p>
             <p>Танджиро присоединяется к ордену Истребителей Демонов, чтобы найти лекарство для сестры и отомстить за гибель семьи. На пути он встречает <strong>Зеницу</strong> и <strong>Иноскэ</strong>, и вместе они сражаются с могущественными демонами.</p>
         </section>
 
         <section>
-            <h2>Персонажи</h2>
+            <h2 data-i18n="characters">Персонажи</h2>
             <div class="characters-grid">
                 <div class="character-card">
                     <div class="character-avatar" style="background:#880e4f">Т</div>
@@ -83,7 +84,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/97631/Kimetsu_no_Yaiba" target="_blank">MyAnimeList — Истребитель демонов (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/101922/Kimetsu_no_Yaiba" target="_blank">MyAnimeList — Истребитель демонов (аниме)</a></li>
@@ -93,9 +94,10 @@
             </ul>
         </section>
             <section>
-            <h2>Трейлер</h2>
+            <h2 data-i18n="trailer">Трейлер</h2>
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/VQGCKyZkGP4" title="Demon Slayer" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

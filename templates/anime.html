@@ -12,10 +12,11 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
-        <h1>Раздел аниме</h1>
-        <p class="subtitle">Все аниме-разделы сайта в одном месте</p>
+        <h1 data-i18n="anime_title">Раздел аниме</h1>
+        <p class="subtitle" data-i18n="anime_subtitle">Все аниме-разделы сайта в одном месте</p>
 
         <section>
             <div class="hub-grid">
@@ -118,7 +119,7 @@
         </section>
 
         <section>
-            <h2>Статистика</h2>
+            <h2 data-i18n="anime_stats">Статистика</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Разделов</span><span class="info-value">16</span></div>
                 <div class="info-card"><span class="info-label">Страниц</span><span class="info-value">25+</span></div>
@@ -127,5 +128,6 @@
             </div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Атака Титанов (Attack on Titan)</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Манга Хадзимэ Исаямы и аниме-сериал</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, драма, фэнтези</span></div>
                 <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Хадзимэ Исаяма</span></div>
@@ -31,13 +32,13 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="plot">Сюжет</h2>
             <p>Человечество живёт за тремя стенами, защищающими от гигантских существ — <strong>Титанов</strong>, пожирающих людей. <strong>Эрен Йегер</strong> становится свидетелем гибели матери от Титана и клянётся уничтожить всех Титанов.</p>
             <p>Вместе с подругами детства — <strong>Микасой</strong> и <strong>Армином</strong> — он вступает в Разведывательный корпус. Позже выясняется, что Титаны — это люди, и мир за стенами совсем не такой, каким казался.</p>
         </section>
 
         <section>
-            <h2>Персонажи</h2>
+            <h2 data-i18n="characters">Персонажи</h2>
             <div class="characters-grid">
                 <div class="character-card">
                     <div class="character-avatar" style="background:#2e7d32">Э</div>
@@ -85,7 +86,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/23390/Shingeki_no_Kyojin" target="_blank">MyAnimeList — Атака Титанов (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank">MyAnimeList — Атака Титанов (аниме)</a></li>
@@ -95,9 +96,10 @@
             </ul>
         </section>
             <section>
-            <h2>Трейлер</h2>
+            <h2 data-i18n="trailer">Трейлер</h2>
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/Lnu5du61DzQ" title="Attack on Titan" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

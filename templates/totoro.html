@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Мой сосед Тоторо</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Японский анимационный фильм 1988 года, созданный Хаяо Миядзаки</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card">
                     <span class="info-label">Жанр</span>
@@ -49,7 +50,7 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="plot">Сюжет</h2>
             <p>В 1950-х годах отец с двумя дочерьми переезжают в деревню, в разрушающийся дом. В нём водятся духи сажи — «чёрные чернушки», сусуватари. Мать семейства находится в больнице, и на время её болезни вся работа по дому ложится на плечи отца и старшей дочери Сацуки.</p>
 
             <p>Непоседливая младшая сестра Мэй встречает маленького лесного духа, который приводит её к более крупному духу, а потом и к большому <strong>Тоторо</strong> — хранителю леса, живущему неподалёку.</p>
@@ -62,7 +63,7 @@
         </section>
 
         <section>
-            <h2>Персонажи</h2>
+            <h2 data-i18n="characters">Персонажи</h2>
             <div class="characters-grid">
                 <div class="character-card">
                     <div class="character-avatar totoro-avatar">Т</div>
@@ -184,7 +185,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/anime/199/My_Neighbor_Totoro" target="_blank">MyAnimeList — My Neighbor Totoro</a></li>
                 <li><a href="https://www.crunchyroll.com/series/GRQ3WM1P0/My-Neighbor-Totoro" target="_blank">Crunchyroll — My Neighbor Totoro</a></li>
@@ -195,9 +196,10 @@
             </ul>
         </section>
             <section>
-            <h2>Трейлер</h2>
+            <h2 data-i18n="trailer">Трейлер</h2>
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/92a7H4MONlo" title="My Neighbor Totoro" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

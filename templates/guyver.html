@@ -12,11 +12,12 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
-        <h1>Гайвер (Guyver)</h1>
+        <h1 data-i18n="guyver_title">Гайвер (Guyver)</h1>
         <img src="{{ url_for('static', filename='guyver_hero.svg') }}" alt="Гайвер" class="hero-image">
-        <p class="subtitle">Персонаж манги, аниме и фильмов, созданный Ёсики Такая</p>
+        <p class="subtitle" data-i18n="guyver_subtitle">Персонаж манги, аниме и фильмов, созданный Ёсики Такая</p>
 
         <section>
             <h2>Разделы</h2>
@@ -55,7 +56,7 @@
         </section>
 
         <section>
-            <h2>О персонаже</h2>
+            <h2 data-i18n="guyver_about">О персонаже</h2>
             <p>Гайвер представляет собой симбиотическое биомеханическое устройство (броню), которое многократно усиливает возможности своего носителя. Основной сюжет строится вокруг подростка Сё Фукамати, который случайно активирует эту броню и становится её хозяином, противостоя корпорации «Кронос» и её армии генетически модифицированных существ — зоаноидов.</p>
         </section>
 
@@ -79,7 +80,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="guyver_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/anime/1627/Guyver_Out_of_Control" target="_blank">MyAnimeList — Guyver: Out of Control</a></li>
                 <li><a href="https://myanimelist.net/anime/1628/Guyver_Bio_Booster_Armor" target="_blank">MyAnimeList — Guyver: Bio-Booster Armor</a></li>
@@ -94,5 +95,6 @@
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/G6a8qW_rQ0c" title="Guyver" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

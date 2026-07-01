@@ -12,14 +12,15 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
-        <h1>Блич (Bleach)</h1>
+        <h1 data-i18n="bleach_title">Блич (Bleach)</h1>
         <img src="{{ url_for('static', filename='bleach_hero.svg') }}" alt="Блич" class="hero-image">
         <p class="subtitle">Манга Тайто Кубо и её аниме-экранизация</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="bleach_overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, городское фэнтези</span></div>
                 <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Тайто Кубо</span></div>
@@ -31,7 +32,7 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="bleach_plot">Сюжет</h2>
             <p>Действие происходит в современной Японии. Пятнадцатилетний школьник <strong>Ичиго Куросаки</strong>, способный видеть духов, знакомится с девушкой-шинигами <strong>Рукией Кучики</strong>. В битве с «пустым» (злым духом) Рукия передаёт Ичиго свои силы, и он сам становится проводником душ (синигами).</p>
             <p>Ичиго вынужден сражаться с пустыми, защищать людей и отправлять души умерших в загробный мир — <strong>Сообщество душ</strong>.</p>
         </section>
@@ -117,7 +118,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="bleach_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/12/Bleach" target="_blank">MyAnimeList — Bleach (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/269/Bleach" target="_blank">MyAnimeList — Bleach (аниме)</a></li>
@@ -132,5 +133,6 @@
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/786YQS1Kx5A" title="Bleach" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

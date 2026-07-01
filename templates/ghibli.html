@@ -12,6 +12,7 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
         <h1>Studio Ghibli</h1>
@@ -19,7 +20,7 @@
         <p class="subtitle">Легендарная японская анимационная студия</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Основание</span><span class="info-value">1985 год</span></div>
                 <div class="info-card"><span class="info-label">Основатели</span><span class="info-value">Миядзаки, Такахата, Судзуки</span></div>
@@ -117,7 +118,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="useful_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://www.ghibli.jp" target="_blank">Официальный сайт Studio Ghibli</a></li>
                 <li><a href="https://www.ghibli-museum.jp" target="_blank">Музей Гибли (Митака)</a></li>
@@ -129,5 +130,6 @@
             </ul>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

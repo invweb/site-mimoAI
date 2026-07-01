@@ -12,20 +12,21 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
-        <h1>Поиск аниме</h1>
-        <p class="subtitle">Найдите нужное аниме по названию</p>
+        <h1 data-i18n="search_title">Поиск аниме</h1>
+        <p class="subtitle" data-i18n="search_subtitle">Найдите нужное аниме по названию</p>
 
         <section>
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Введите название аниме..." autofocus>
-                <button onclick="search()">Найти</button>
+                <input type="text" id="searchInput" placeholder="Введите название аниме..." data-i18n-placeholder="search_placeholder" autofocus>
+                <button onclick="search()" data-i18n="search_btn">Найти</button>
             </div>
         </section>
 
         <section id="results">
-            <h2>Все аниме на сайте</h2>
+            <h2 data-i18n="search_all">Все аниме на сайте</h2>
             <div class="anime-list" id="animeList">
                 <a href="/guyver" class="anime-item" data-name="гайвер guyver био-броня зоаноиды такая">
                     <div class="anime-item-icon" style="background:#e94560">G</div>
@@ -175,7 +176,7 @@
         </section>
 
         <section>
-            <h2>Жанры</h2>
+            <h2 data-i18n="search_genres">Жанры</h2>
             <div class="genre-tags">
                 <span class="genre-tag" onclick="filterByGenre('боевик')">Боевик</span>
                 <span class="genre-tag" onclick="filterByGenre('фэнтези')">Фэнтези</span>
@@ -226,5 +227,6 @@
             performSearch();
         }
     </script>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>

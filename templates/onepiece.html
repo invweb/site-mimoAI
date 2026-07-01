@@ -12,14 +12,15 @@
         <a href="/about">About</a>
         <a href="/anime">Аниме</a>
         <a href="/search">Поиск</a>
+        <button class="lang-btn" onclick="toggleLanguage()"><span class="lang-current">RU</span></button>
     </nav>
     <main>
-        <h1>One Piece — Большой куш</h1>
+        <h1 data-i18n="op_title">One Piece — Большой куш</h1>
         <img src="{{ url_for('static', filename='onepiece_hero.svg') }}" alt="One Piece" class="hero-image">
         <p class="subtitle">Сёнэн-манга Эйитиро Оды — самая продаваемая манга в мире</p>
 
         <section>
-            <h2>Обзор</h2>
+            <h2 data-i18n="op_overview">Обзор</h2>
             <div class="info-grid">
                 <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Приключения, фэнтези, комедия</span></div>
                 <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Эйитиро Ода</span></div>
@@ -31,7 +32,7 @@
         </section>
 
         <section>
-            <h2>Сюжет</h2>
+            <h2 data-i18n="op_plot">Сюжет</h2>
             <p><strong>Манки Д. Луффи</strong> — мальчик, мечтający стать Королём пиратов. В детстве случайно съев Дьявольский плод Резина-Резина, он получил способность растягиваться как резина, но потерял способность плавать.</p>
             <p>Спустя 10 лет Луффи отправляется в плавание и собирает команду <strong>«Пираты Соломенной Шляпы»</strong>. Вместе они ищут легендарное сокровище <strong>«One Piece»</strong>, спрятанное Королём пиратов Гол Д. Роджером.</p>
             <p>Путешествие проходит через океан Ист-Блю, затем на течение <strong>Гранд-Лайн</strong> — самое опасное течение в мире, где обычные компасы не работают.</p>
@@ -161,7 +162,7 @@
         </section>
 
         <section>
-            <h2>Полезные ссылки</h2>
+            <h2 data-i18n="op_links">Полезные ссылки</h2>
             <ul>
                 <li><a href="https://myanimelist.net/manga/12/One_Piece" target="_blank">MyAnimeList — One Piece (манга)</a></li>
                 <li><a href="https://myanimelist.net/anime/21/One_Piece" target="_blank">MyAnimeList — One Piece (аниме)</a></li>
@@ -176,5 +177,6 @@
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/HR5TLk-P7mc" title="One Piece" frameborder="0" allowfullscreen></iframe></div>
         </section>
     </main>
+    <script src="{{ url_for('static', filename='i18n.js') }}"></script>
 </body>
 </html>
