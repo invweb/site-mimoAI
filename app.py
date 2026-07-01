@@ -11,6 +11,10 @@ def index():
 def about():
     return render_template('about.html', title='About')
 
+@app.route('/anime')
+def anime():
+    return render_template('anime.html', title='Аниме')
+
 @app.route('/guyver')
 def guyver():
     return render_template('guyver.html', title='Гайвер')

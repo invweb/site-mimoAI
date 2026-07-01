@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аниме</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+    </nav>
+    <main>
+        <h1>Раздел аниме</h1>
+        <p class="subtitle">Все аниме-разделы сайта в одном месте</p>
+
+        <section>
+            <div class="hub-grid">
+                <a href="/guyver" class="hub-card">
+                    <img src="{{ url_for('static', filename='guyver_hero.svg') }}" alt="Гайвер" style="width:100%;height:140px;object-fit:contain;border-radius:6px;margin-bottom:0.75rem">
+                    <h3>Гайвер</h3>
+                    <p>Био-броня, зоаноиды, корпорация «Кронос». Манга, аниме и фильмы Ёсики Такая.</p>
+                </a>
+
+                <a href="/totoro" class="hub-card">
+                    <img src="{{ url_for('static', filename='totoro_hero2.svg') }}" alt="Тоторо" style="width:100%;height:140px;object-fit:contain;border-radius:6px;margin-bottom:0.75rem">
+                    <h3>Мой сосед Тоторо</h3>
+                    <p>Классика Studio Ghibli. История о двух сёстрах и лесном духе. Хаяо Миядзаки, 1988.</p>
+                </a>
+
+                <a href="/bleach" class="hub-card">
+                    <img src="{{ url_for('static', filename='bleach_hero.svg') }}" alt="Блич" style="width:100%;height:140px;object-fit:contain;border-radius:6px;margin-bottom:0.75rem">
+                    <h3>Блич</h3>
+                    <p>Синигами, пустые, квинси. Тайто Кубо. 74 тома манги, 366 серий аниме.</p>
+                </a>
+
+                <a href="/onepiece" class="hub-card">
+                    <img src="{{ url_for('static', filename='onepiece_hero.svg') }}" alt="One Piece" style="width:100%;height:140px;object-fit:contain;border-radius:6px;margin-bottom:0.75rem">
+                    <h3>One Piece</h3>
+                    <p>Пираты Соломенной Шляпы. Самая продаваемая манга в мире — более 516 млн копий.</p>
+                </a>
+
+                <a href="/ghibli" class="hub-card">
+                    <img src="{{ url_for('static', filename='ghibli_hero.svg') }}" alt="Studio Ghibli" style="width:100%;height:140px;object-fit:contain;border-radius:6px;margin-bottom:0.75rem">
+                    <h3>Studio Ghibli</h3>
+                    <p>Легендарная студия. Миядзаки, Такахата, Тоторо. 25 полнометражных фильмов.</p>
+                </a>
+
+                <a href="/naruto" class="hub-card">
+                    <img src="{{ url_for('static', filename='naruto_hero.svg') }}" alt="Наруто" style="width:100%;height:140px;object-fit:contain;border-radius:6px;margin-bottom:0.75rem">
+                    <h3>Наруто</h3>
+                    <p>Ниндзя, тайдзюцу, кеккай гэнкай. Масаши Кисимото. 250 млн копий манги.</p>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Статистика</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Разделов</span><span class="info-value">6</span></div>
+                <div class="info-card"><span class="info-label">Страниц</span><span class="info-value">15+</span></div>
+                <div class="info-card"><span class="info-label">SVG-иллюстраций</span><span class="info-value">12</span></div>
+                <div class="info-card"><span class="info-label">Интерактивных элементов</span><span class="info-value">Квиз, фильтры, таймлайн</span></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
