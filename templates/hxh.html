@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Охотник x Охотник</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Охотник x Охотник (Hunter x Hunter)</h1>
+        <img src="{{ url_for('static', filename='hxh_hero.svg') }}" alt="Охотник x Охотник" class="hero-image">
+        <p class="subtitle">Манга Ёсихиро Тогаши и аниме-сериалы</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Приключения, боевик, фэнтези</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Ёсихиро Тогаши</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Madhouse</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">1998–наст. время, 37 томов</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">1999–2001 + 2011–2014</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 30 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Гон Фрикс</strong> — 12-летний мальчик, решивший найти своего отца <strong>Джинна Фрикса</strong> — могущественного охотника. Чтобы стать охотником, он должен сдать экзамен, проходимый раз в год.</p>
+            <p>По пути Гон встречает <strong>Киллуа</strong>, <strong>Куропику</strong> и <strong>Лэорио</strong>, с которыми проходит испытание. Вместе они отправляются в опасные приключения, ища Джинна и сталкиваясь с могущественными противниками.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#2e7d32">Г</div>
+                    <h3>Гон Фрикс</h3>
+                    <p>Главный герой. Мальчик с невероятным потенциалом иским.</p>
+                    <span class="char-tag">Охотник</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">К</div>
+                    <h3>Киллуа Залдик</h3>
+                    <p>Наследник убийц. Лучший друг Гона.</p>
+                    <span class="char-tag">Убийца</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">К</div>
+                    <h3>Куропика</h3>
+                    <p>Последний из клана Курута. Ищет месть за гибель соплеменников.</p>
+                    <span class="char-tag">Охотник</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ff9800">Л</div>
+                    <h3>Лэорио</h3>
+                    <p>Студент-медик. Верный друг Гона и Киллуа.</p>
+                    <span class="char-tag">Охотник</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Экзамена</dt>
+                <dd>Сдача экзамена на охотника.</dd>
+                <dt>Арка Горы Кукрума</dt>
+                <dd>Поиск сильнейшего соперника.</dd>
+                <dt>Арка Зверя Химера</dt>
+                <dd>Борьба с муравьями Химера.</dd>
+                <dt>Арка Тёмный Континент</dt>
+                <dd>Путешествие на запретный континент.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/90/Hunter_x_Hunter" target="_blank">MyAnimeList — Hunter x Hunter (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011" target="_blank">MyAnimeList — Hunter x Hunter 2011 (аниме)</a></li>
+                <li><a href="https://hunterxhunter.fandom.com" target="_blank">Hunter x Hunter Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GY3XQ8YM5/hunter-x-hunter" target="_blank">Crunchyroll — Hunter x Hunter</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter" target="_blank">Wikipedia — Hunter x Hunter</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

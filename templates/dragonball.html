@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дракон Болл</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Дракон Болл (Dragon Ball)</h1>
+        <img src="{{ url_for('static', filename='dragonball_hero.svg') }}" alt="Дракон Болл" class="hero-image">
+        <p class="subtitle">Манга Акиры Ториямы и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, приключения, комедия</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Акира Торияма</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Toei Animation</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">1984–1995, 42 тома</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">1986–1996</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 260 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Гоку</strong> — мальчик с хвостом, обладающий невероятной силой. Он живёт вдали от цивилизации, пока не встречает <strong>Бульму</strong>, которая ищет <strong>Драконьи шары</strong> — семь магических сфер, выполняющих желание.</p>
+            <p>Вместе с друзьями Гоку отправляется на поиски шаров, сражаясь с могущественными врагами. Со временем он узнаёт, что он来自 с планеты Сайя, и его ждут ещё более опасные испытания.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ff9800">Г</div>
+                    <h3>Гоку</h3>
+                    <p>Главный герой. Сайянин, защищающий Землю от зла.</p>
+                    <span class="char-tag">Сайянин</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">В</div>
+                    <h3>Вегета</h3>
+                    <p>Принц Сайя. Сначала враг, потом союзник Гоку.</p>
+                    <span class="char-tag">Принц</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Г</div>
+                    <h3>Гохан</h3>
+                    <p>Сын Гоку. Обладает скрытым потенциалом.</p>
+                    <span class="char-tag">Полусайянин</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#4a148c">П</div>
+                    <h3>Пикколо</div>
+                    <p>Бывший враг. Наставник Гохана.</p>
+                    <span class="char-tag">Намекианец</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Драконьих Шаров</dt>
+                <dd>Поиск шаров и первые приключения.</dd>
+                <dt>Арка Торнира Всей Силы</dt>
+                <dd>Участие в турнирах.</dd>
+                <dt>Арка Сайянов</dt>
+                <dd>Появление Вегеты и Наппы.</dd>
+                <dt>Арка Фризы</dt>
+                <dd>Битва с могущественным космическим тираном.</dd>
+                <dt>Арка Андроидов и Человека-Свиньи</dt>
+                <dd>Борьба с искусственными существами.</dd>
+                <dt>Арка Буу</dt>
+                <dd>Битва с древним злом.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/414/Dragon_Ball" target="_blank">MyAnimeList — Dragon Ball (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/813/Dragon_Ball" target="_blank">MyAnimeList — Dragon Ball (аниме)</a></li>
+                <li><a href="https://dragonball.fandom.com" target="_blank">Dragon Ball Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GQWH376PR/dragon-ball" target="_blank">Crunchyroll — Dragon Ball</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Dragon_Ball" target="_blank">Wikipedia — Dragon Ball</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

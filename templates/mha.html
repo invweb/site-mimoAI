@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя геройская академия</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Моя геройская академия (My Hero Academia)</h1>
+        <img src="{{ url_for('static', filename='mha_hero.svg') }}" alt="Моя геройская академия" class="hero-image">
+        <p class="subtitle">Манга Кохэя Хорикоси и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, супергерои, комедия</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Кохэй Хорикоси</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Bones</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2014–2024, 40 томов</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2016–2024</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 85 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Изuku Мидория</strong> — мальчик, родившийся без «quirk» (суперсилы) в мире, где 80% людей обладают особыми способностями. Он мечтает стать героем, несмотря на отсутствие дара.</p>
+            <p>Встретив величайшего героя — <strong>Олл Майта</strong> — Изuku получает его силу «One For All» и поступает в Академию Ю heroes, где тренируется вместе с другими молодыми героями, включая своего главного соперника — <strong>Кацуки Бакуго</strong>.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#2e7d32">И</div>
+                    <h3>Изuku Мидория</h3>
+                    <p>Главный герой. Мальчик без quirka, получивший One For All.</p>
+                    <span class="char-tag">Герой</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ffc107">О</div>
+                    <h3>Олл Майт</h3>
+                    <p>Величайший герой. Передаёт свою силу Изuku.</p>
+                    <span class="char-tag">Легенда</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Б</div>
+                    <h3>Кацуки Бакуго</h3>
+                    <p>Гениальный соперник Изuku. Обладает силой взрыва.</p>
+                    <span class="char-tag">Герой</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">Т</div>
+                    <h3>Теноя Идзуку</h3>
+                    <p>Лучший друг Изuku. Обладает теневыми щупальцами.</p>
+                    <span class="char-tag">Герой</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Спортивного Фестиваля</dt>
+                <dd>Первое крупное испытание для студентов академии.</dd>
+                <dt>Арка Стажировки</dt>
+                <dd>Стажировка у профессиональных героев.</dd>
+                <dt>Арка Лагеря</dt>
+                <dd>Тренировочный лагерь и атака Лиги Злодеев.</dd>
+                <dt>Арка Тайного Мира</dt>
+                <dd>Раскрытие тайной организации злодеев.</dd>
+                <dt>Арка Финал</dt>
+                <dd>Последняя битва между героями и злодеями.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/86193/Boku_no_Hero_Academia" target="_blank">MyAnimeList — My Hero Academia (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/31964/Boku_no_Hero_Academia" target="_blank">MyAnimeList — My Hero Academia (аниме)</a></li>
+                <li><a href="https://myheroacademia.fandom.com" target="_blank">My Hero Academia Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/G6NQ5DWZ6/my-hero-academia" target="_blank">Crunchyroll — My Hero Academia</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/My_Hero_Academia" target="_blank">Wikipedia — My Hero Academia</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

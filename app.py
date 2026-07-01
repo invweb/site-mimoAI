@@ -67,6 +67,46 @@ def ghibli():
 def naruto():
     return render_template('naruto.html', title='Наруто')
 
+@app.route('/aot')
+def aot():
+    return render_template('aot.html', title='Атака Титанов')
+
+@app.route('/demonslayer')
+def demonslayer():
+    return render_template('demonslayer.html', title='Истребитель демонов')
+
+@app.route('/deathnote')
+def deathnote():
+    return render_template('deathnote.html', title='Тетрадь Смерти')
+
+@app.route('/fma')
+def fma():
+    return render_template('fma.html', title='Стальной алхимик')
+
+@app.route('/jjk')
+def jjk():
+    return render_template('jjk.html', title='Магическая битва')
+
+@app.route('/mha')
+def mha():
+    return render_template('mha.html', title='Моя геройская академия')
+
+@app.route('/opm')
+def opm():
+    return render_template('opm.html', title='Ванпанчмен')
+
+@app.route('/hxh')
+def hxh():
+    return render_template('hxh.html', title='Охотник x Охотник')
+
+@app.route('/dragonball')
+def dragonball():
+    return render_template('dragonball.html', title='Дракон Болл')
+
+@app.route('/sao')
+def sao():
+    return render_template('sao.html', title='Мастера Меча Онлайн')
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 3000))
     app.run(debug=True, port=port)

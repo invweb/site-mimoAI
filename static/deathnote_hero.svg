@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  <!-- Notebook -->
+  <rect x="300" y="80" width="200" height="260" rx="5" fill="#fff"/>
+  <rect x="310" y="90" width="180" height="240" rx="3" fill="#f5f5f5"/>
+  <text x="400" y="130" text-anchor="middle" font-family="serif" font-size="16" fill="#333" font-weight="bold">DEATH NOTE</text>
+  <line x1="320" y1="150" x2="480" y2="150" stroke="#ddd" stroke-width="1"/>
+  <line x1="320" y1="170" x2="480" y2="170" stroke="#ddd" stroke-width="1"/>
+  <line x1="320" y1="190" x2="480" y2="190" stroke="#ddd" stroke-width="1"/>
+  <line x1="320" y1="210" x2="480" y2="210" stroke="#ddd" stroke-width="1"/>
+  <line x1="320" y1="230" x2="480" y2="230" stroke="#ddd" stroke-width="1"/>
+  <text x="400" y="280" text-anchor="middle" font-family="serif" font-size="24" fill="#c62828">KIRA</text>
+  <text x="400" y="370" text-anchor="middle" font-family="system-ui" font-size="14" fill="rgba(255,255,255,0.7)">Тетрадь Смерти</text>
+</svg>

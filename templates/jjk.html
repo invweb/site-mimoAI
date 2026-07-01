@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магическая битва</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Магическая битва (Jujutsu Kaisen)</h1>
+        <img src="{{ url_for('static', filename='jjk_hero.svg') }}" alt="Магическая битва" class="hero-image">
+        <p class="subtitle">Манга Гэгэ Акутами и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, сверхъестественное, ужасы</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Гэгэ Акутами</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">MAPPA</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2018–наст. время, 27 томов</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2020–наст. время</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 90 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Юдзи Итадори</strong> — обычный школьник с невероятной физической силой. Когда его друзья атакуют проклятие, он проглатывает палец <strong>Рюмена Сукуны</strong> — проклятого короля.</p>
+            <p>Юдзи становится вместилищем Сукуны, но сохраняет контроль над телом. Его отправляют в школу магов, где он учится сражаться с проклятиями и ищет способ уничтожить все пальцы Сукуны, чтобы спасти мир.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Ю</div>
+                    <h3>Юдзи Итадори</h3>
+                    <p>Главный герой. Стал вместилищем Сукуны, но сохранил человечность.</p>
+                    <span class="char-tag">Маг</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#4a148c">С</div>
+                    <h3>Рюмен Сукуна</h3>
+                    <p>Проклятый король. Могущественнейшее существо в мире проклятий.</p>
+                    <span class="char-tag">Проклятие</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">М</div>
+                    <h3>Мэгуми Фусигуки</h3>
+                    <p>Школьник-маг. Владеет техникой Десяти Проклятых Теней.</p>
+                    <span class="char-tag">Маг</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ff9800">Н</div>
+                    <h3>Нобара Кугисаки</h3>
+                    <p>Школьница-маг. Сражается с помощью гвоздей и молотка.</p>
+                    <span class="char-tag">Маг</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Фестиваля</dt>
+                <dd>Участие в национальном магическом фестивале.</dd>
+                <dt>Арка Старшей школы</dt>
+                <dd>Обучение и первые серьёзные сражения с проклятиями.</dd>
+                <dt>Арка Помогательная миссия</dt>
+                <dd>Задание в подземелье и битва с сильными проклятиями.</dd>
+                <dt>Арка Shibuya</dt>
+                <dd>Решающая битва в квартале Сибуя.</dd>
+                <dt>Арка Колония</dt>
+                <dd>Борьба за выживание в колониях проклятий.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/113053/Jujutsu_Kaisen" target="_blank">MyAnimeList — Jujutsu Kaisen (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/40768/Jujutsu_Kaisen" target="_blank">MyAnimeList — Jujutsu Kaisen (аниме)</a></li>
+                <li><a href="https://jujutsu-kaisen.fandom.com" target="_blank">Jujutsu Kaisen Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GY7PQ8EY6/jujutsu-kaisen" target="_blank">Crunchyroll — Jujutsu Kaisen</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank">Wikipedia — Jujutsu Kaisen</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

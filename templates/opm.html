@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ванпанчмен</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Ванпанчмен (One Punch Man)</h1>
+        <img src="{{ url_for('static', filename='opm_hero.svg') }}" alt="Ванпанчмен" class="hero-image">
+        <p class="subtitle">Манга ONE и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, комедия, супергерои</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">ONE (оригинал), Юсутэ Кисимото (иллюстрации)</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Madhouse / J.C.Staff</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2009–наст. время</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2015–наст. время</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 30 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Сайтама</strong> — герой, который стал настолько сильным, что побеждает любого противника одним ударом. Но эта сила пришла с ценой — он потерял интерес к битвам и чувствует скуку.</p>
+            <p>Сайтама становится героем-профи, но его низкий ранг не отражает его реальную силу. Вместе со своим учеником <strong>Дженосом</strong> он сражается с монстрами и злодеями, ища достойного противника.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ffc107">С</div>
+                    <h3>Сайтама</h3>
+                    <p>Главный герой. Герой, побеждающий всех одним ударом.</p>
+                    <span class="char-tag">S-класс</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">Д</div>
+                    <h3>Дженос</h3>
+                    <p>Ученик Сайтама. Киборг, ищущий сильного мастера.</p>
+                    <span class="char-tag">А-class</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Т</div>
+                    <h3>Татсуки Мастер</h3>
+                    <p>Сильнейший герой в мире. Бывший преступник.</p>
+                    <span class="char-tag">S-класс</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#2e7d32">Г</div>
+                    <h3>Гару</h3>
+                    <p>«Охотник на героев». Борец за справедливость на стороне злодеев.</p>
+                    <span class="char-tag">Антигерой</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Злодеев</dt>
+                <dd>Битва с.organization и появление сильнейших злодеев.</dd>
+                <dt>Арка Турнира</dt>
+                <dd>Участие в турнире бойцов.</dd>
+                <dt>Арка Инопасной Волны</dt>
+                <dd>Масштабная атака монстров на город.</dd>
+                <dt>Арка Монстров</dt>
+                <dd>Битва с organization и эволюцией монстров.</dd>
+                <dt>Арка Космоса</dt>
+                <dd>Угроза из космоса и новые могущественные враги.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/111019/One_Punch_Man" target="_blank">MyAnimeList — One Punch Man (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/30276/One_Punch_Man" target="_blank">MyAnimeList — One Punch Man (аниме)</a></li>
+                <li><a href="https://onepunchman.fandom.com" target="_blank">One Punch Man Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GYJ26XQKZ/one-punch-man" target="_blank">Crunchyroll — One Punch Man</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/One_Punch_Man" target="_blank">Wikipedia — One Punch Man</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

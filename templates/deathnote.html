@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тетрадь Смерти</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Тетрадь Смерти (Death Note)</h1>
+        <img src="{{ url_for('static', filename='deathnote_hero.svg') }}" alt="Тетрадь Смерти" class="hero-image">
+        <p class="subtitle">Манга Обы Тсугуми и Такэши Обаты и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Триллер, детектив, сверхъестественное</span></div>
+                <div class="info-card"><span class="info-label">Авторы</span><span class="info-value">Оба Тсугуми и Такэши Обата</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Madhouse</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2003–2006, 12 томов</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2006–2007, 37 серий</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 30 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Лайт Ягами</strong> — одарённый старшеклассник, находящий Тетрадь Смерти, упавшую из мира Shinigami. Записав имя человека в тетрадь, можно убить его.</p>
+            <p>Лайт решает стать «богом нового мира», избавляя его от преступников. Против него выступает загадочный детектив <strong>L</strong>, стремящийся раскрыть личность убийцы. Между ними начинается интеллектуальная игра на жизнь и смерть.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Л</div>
+                    <h3>Лайт Ягами</h3>
+                    <p>Главный герой. Талантливый студент, решивший очистить мир от преступников.</p>
+                    <span class="char-tag">Kira</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#4a148c">L</div>
+                    <h3>L</h3>
+                    <p>Лучший детектив в мире. Раскрывает личность Kira.</p>
+                    <span class="char-tag">Детектив</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#212121">Р</div>
+                    <h3>Рюк</h3>
+                    <p>Shinigami, подбросивший Тетрадь Смерти из скуки.</p>
+                    <span class="char-tag">Shinigami</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">М</div>
+                    <h3>Миса Аманэ</h3>
+                    <p>Модель и певица. Верит в идеалы Kira и помогает Лайту.</p>
+                    <span class="char-tag">Помощница</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Лайта vs L</dt>
+                <dd>Интеллектуальная война между Kira и детективом L.</dd>
+                <dt>Арка Мисы</dt>
+                <dd>Появление Мисы Аманэ и использование Shinigami Eyes.</dd>
+                <dt>Арка Яцуба</dt>
+                <dd>Раскрытие личности L и смерть детектива.</dd>
+                <dt>Арка Кира-ки</dt>
+                <dd>Новая эра Kira после исчезновения L.</dd>
+                <dt>Арка Финал</dt>
+                <dd>Последнее противостояние Лайта и successors L.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/21/Death_Note" target="_blank">MyAnimeList — Death Note (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/1535/Death_Note" target="_blank">MyAnimeList — Death Note (аниме)</a></li>
+                <li><a href="https://deathnote.fandom.com" target="_blank">Death Note Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GYQ4MW246/death-note" target="_blank">Crunchyroll — Death Note</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Death_Note" target="_blank">Wikipedia — Death Note</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

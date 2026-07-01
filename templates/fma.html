@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стальной алхимик</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Стальной алхимик (Fullmetal Alchemist)</h1>
+        <img src="{{ url_for('static', filename='fma_hero.svg') }}" alt="Стальной алхимик" class="hero-image">
+        <p class="subtitle">Манга Хиромэ Аракавы и аниме-сериалы</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Приключения, драма, фэнтези</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Хиромэ Аракава</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Bones</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2001–2010, 27 томов</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2003 + Brotherhood 2009</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 70 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Эдвард</strong> и <strong>Альфонс Элрик</strong> — братья-алхимики, потерявшие части тела после неудачной попытки оживить мать. Эдвард потерял руки и ноги, а Альфонс потерял всё тело.</p>
+            <p>Братья отправляются в путешествие, чтобы найти <strong>Философский камень</strong> — могущественный артефакт, способный вернуть им их тела. По пути они узнают тёмные тайны алхимии и сталкиваются с могущественным врагом.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">Э</div>
+                    <h3>Эдвард Элрик</h3>
+                    <p>Главный герой. Стальной алхимик, обладающий механическими конечностями.</p>
+                    <span class="char-tag">Алхимик</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">А</div>
+                    <h3>Альфонс Элрик</h3>
+                    <p>Брат Эдварда. Душа в доспехах после неудачной алхимической трансмутации.</p>
+                    <span class="char-tag">Алхимик</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#4a148c">Р</div>
+                    <h3>Рой Мастэнг</h3>
+                    <p>Полковник армии. Алхимик огня, стремящийся стать Фюрером.</p>
+                    <span class="char-tag">Полковник</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#2e7d32">Р</div>
+                    <h3>Риза Хокай</h3>
+                    <p>Снайпер и правая рука Мастэнга. Верный помощник полковника.</p>
+                    <span class="char-tag">Снайпер</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Лисана</dt>
+                <dd>Братья ищут Философский камень в столице.</dd>
+                <dt>Арка Лаборатории</dt>
+                <dd>Раскрытие тайны создания Философского камня.</dd>
+                <dt>Арка Долины Шёпота</dt>
+                <dd>Путешествие в Ишвар и встреча с Mustang.</dd>
+                <dt>Арка Центральной Столицы</dt>
+                <dd>Финальная битва с Father и Homunculi.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/8/Fullmetal_Alchemist" target="_blank">MyAnimeList — Fullmetal Alchemist (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood" target="_blank">MyAnimeList — Fullmetal Alchemist: Brotherhood (аниме)</a></li>
+                <li><a href="https://fma.fandom.com" target="_blank">Fullmetal Alchemist Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GY8VEQ95Y/fullmetal-alchemist-brotherhood" target="_blank">Crunchyroll — Fullmetal Alchemist Brotherhood</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist" target="_blank">Wikipedia — Fullmetal Alchemist</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастера Меча Онлайн</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Мастера Меча Онлайн (Sword Art Online)</h1>
+        <img src="{{ url_for('static', filename='sao_hero.svg') }}" alt="Мастера Меча Онлайн" class="hero-image">
+        <p class="subtitle">Манга Рэки Кawahara и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Приключения, фэнтези, романтика</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Рэки Кawahara</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">A-1 Pictures</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2009–наст. время</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2012–наст. время</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 30 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Кирито</strong> — игрок-одиночка, застрявший в VRMMORPG «Sword Art Online». Создатель игры объявил, что игроки не смогут выйти, пока не пройдут 100 этажей башни.</p>
+            <p>По пути Кирито встречает <strong>Асуну</strong> — сильную фехтовальщицу. Вместе они сражаются с монстрами и другими игроками, ища способ покинуть игру и спасти жизни тысяч людей.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">К</div>
+                    <h3>Кирито</h3>
+                    <p>Главный герой. Игрок-одиночка с уникальными способностями.</p>
+                    <span class="char-tag">Мечник</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#e91e63">А</div>
+                    <h3>Асуна</h3>
+                    <p>Сильная фехтовальщица и любовный интерес Кирито.</p>
+                    <span class="char-tag">Фехтовальщица</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#4a148c">Л</div>
+                    <h3>Лиз</div>
+                    <p>Покровительница мечей. Хранительница оружия.</p>
+                    <span class="char-tag">Мастер</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ff9800">К</div>
+                    <h3>Клейн</h3>
+                    <p>Первый друг Кирито в игре.</p>
+                    <span class="char-tag">Мечник</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Aincrad</dt>
+                <dd>Борьба за выживание в ловушке SAO.</dd>
+                <dt>Арка Fairy Dance</dt>
+                <dd>Спасение Асуны из лесного мира.</dd>
+                <dt>Арка Phantom Bullet</dt>
+                <dd>Игра вGun Gale Online и расследование.</dd>
+                <dt>Арка Mothers Rosario</dt>
+                <dd>Помощь молодым игрокам с неизлечимой болезнью.</dd>
+                <dt>Арка Alicization</dt>
+                <dd>Приключения в виртуальном мире Underworld.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/49509/Sword_Art_Online" target="_blank">MyAnimeList — Sword Art Online (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/11759/Sword_Art_Online" target="_blank">MyAnimeList — Sword Art Online (аниме)</a></li>
+                <li><a href="https://swordartonline.fandom.com" target="_blank">Sword Art Online Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GJWM8JXZY/sword-art-online" target="_blank">Crunchyroll — Sword Art Online</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Sword_Art_Online" target="_blank">Wikipedia — Sword Art Online</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

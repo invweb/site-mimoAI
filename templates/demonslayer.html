@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Истребитель демонов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Истребитель демонов (Demon Slayer)</h1>
+        <img src="{{ url_for('static', filename='demonslayer_hero.svg') }}" alt="Истребитель демонов" class="hero-image">
+        <p class="subtitle">Манга Койото Тогоси и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, сверхъестественное, историческое</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Койото Тогоси</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">Studio Ufotable</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2016–2020, 23 тома</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2019–наст. время</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 150 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p><strong>Танджиро Камадо</strong> — старший брат из бедной семьи, живущий в горах. Однажды он возвращается домой и обнаруживает, что его семья вырезана демонами, а его младшая сестра <strong>Незуко</strong> превращена в демона.</p>
+            <p>Танджиро присоединяется к ордену Истребителей Демонов, чтобы найти лекарство для сестры и отомстить за гибель семьи. На пути он встречает <strong>Зеницу</strong> и <strong>Иноскэ</strong>, и вместе они сражаются с могущественными демонами.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#880e4f">Т</div>
+                    <h3>Танджиро Камадо</h3>
+                    <p>Главный герой. Обладает exceptionalным обонянием и освоил Дыхание Воды.</p>
+                    <span class="char-tag">Истребитель</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#e91e63">Н</div>
+                    <h3>Незуко Камадо</h3>
+                    <p>Сестра Танджиро. Превращена в демона, но сохранила человечность.</p>
+                    <span class="char-tag">Демон</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ffc107">З</div>
+                    <h3>Зеницу Агацума</h3>
+                    <p>Трусливый, но сильный истребитель. Владеет Дыханием Молнии.</p>
+                    <span class="char-tag">Истребитель</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#ff5722">И</div>
+                    <h3>Иноскэ Хасибира</h3>
+                    <p>Дикий мальчик, выросший с кабанами. Сражается Дыханием Зверя.</p>
+                    <span class="char-tag">Истребитель</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Тренировки</dt>
+                <dd>Танджиро учится у Гонпачиро Томиока и проходит обучение.</dd>
+                <dt>Арка Дома Стрелков</dt>
+                <dd>Битва с демоном Сванием и спасение заложников.</dd>
+                <dt>Арка Бесконечного Поезда</dt>
+                <dd>Миссия вместе с Ренгоку на поезде.</dd>
+                <dt>Арка Забытой Виллы</dt>
+                <dd>Тренировка и битва с Демоном Крови.</dd>
+                <dt>Арка Бесконечной Крепости</dt>
+                <dd>Финальная битва с Музаном и верховными демонами.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/97631/Kimetsu_no_Yaiba" target="_blank">MyAnimeList — Истребитель демонов (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/101922/Kimetsu_no_Yaiba" target="_blank">MyAnimeList — Истребитель демонов (аниме)</a></li>
+                <li><a href="https://kimetsu-no-yaiba.fandom.com" target="_blank">Demon Slayer Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GRMG8ZQZR/demon-slayer-kimetsu-no-yaiba" target="_blank">Crunchyroll — Demon Slayer</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba" target="_blank">Wikipedia — Demon Slayer</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

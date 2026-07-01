@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Атака Титанов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/anime">Аниме</a>
+        <a href="/search">Поиск</a>
+    </nav>
+    <main>
+        <h1>Атака Титанов (Attack on Titan)</h1>
+        <img src="{{ url_for('static', filename='aot_hero.svg') }}" alt="Атака Титанов" class="hero-image">
+        <p class="subtitle">Манга Хадзимэ Исаямы и аниме-сериал</p>
+
+        <section>
+            <h2>Обзор</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Жанр</span><span class="info-value">Боевик, драма, фэнтези</span></div>
+                <div class="info-card"><span class="info-label">Автор</span><span class="info-value">Хадзимэ Исаяма</span></div>
+                <div class="info-card"><span class="info-label">Студия</span><span class="info-value">MAPPA / Wit Studio</span></div>
+                <div class="info-card"><span class="info-label">Манга</span><span class="info-value">2009–2021, 34 тома</span></div>
+                <div class="info-card"><span class="info-label">Аниме</span><span class="info-value">2013–2023, 87 серий</span></div>
+                <div class="info-card"><span class="info-label">Продажи</span><span class="info-value">Более 110 млн копий</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Сюжет</h2>
+            <p>Человечество живёт за тремя стенами, защищающими от гигантских существ — <strong>Титанов</strong>, пожирающих людей. <strong>Эрен Йегер</strong> становится свидетелем гибели матери от Титана и клянётся уничтожить всех Титанов.</p>
+            <p>Вместе с подругами детства — <strong>Микасой</strong> и <strong>Армином</strong> — он вступает в Разведывательный корпус. Позже выясняется, что Титаны — это люди, и мир за стенами совсем не такой, каким казался.</p>
+        </section>
+
+        <section>
+            <h2>Персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#2e7d32">Э</div>
+                    <h3>Эрен Йегер</h3>
+                    <p>Главный герой. Обладает силой Титана-Атакующего и Стража Стены.</p>
+                    <span class="char-tag">Титан</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#c62828">М</div>
+                    <h3>Микаса Аккерман</h3>
+                    <p>Сильнейший боец Разведкорпуса. Приёмная сестра Эрена.</p>
+                    <span class="char-tag">Разведка</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#1565c0">А</div>
+                    <h3>Армин Арлерт</h3>
+                    <p>Стратег и мозговой центр. Обладает силой Титана-Колосса.</p>
+                    <span class="char-tag">Стратег</span>
+                </div>
+                <div class="character-card">
+                    <div class="character-avatar" style="background:#455a64">Л</div>
+                    <h3>Леви Аккерман</h3>
+                    <p>Сильнейший боец человечества. Капитан Разведкорпуса.</p>
+                    <span class="char-tag">Капитан</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Арки сюжета</h2>
+            <dl>
+                <dt>Арка Тренировочного корпуса</dt>
+                <dd>Подготовка Эрена к борьбе с Титанами.</dd>
+                <dt>Арка Стены Роз</dt>
+                <dd>Оборона города Трост от Титанов.</dd>
+                <dt>Арка Разведывательного корпуса</dt>
+                <dd>Экспедиция за стены. Тайна Титанов.</dd>
+                <dt>Арка Битвы за Стены</dt>
+                <dd>Война с Титанами внутри стен.</dd>
+                <dt>Арка Марлии</dt>
+                <dd>Раскрытие правды о мире за стенами.</dd>
+                <dt>Арка Финал</dt>
+                <dd>Последняя битва за судьбу мира.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li><a href="https://myanimelist.net/manga/23390/Shingeki_no_Kyojin" target="_blank">MyAnimeList — Атака Титанов (манга)</a></li>
+                <li><a href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank">MyAnimeList — Атака Титанов (аниме)</a></li>
+                <li><a href="https://shingekinokyojin.fandom.com" target="_blank">Attack on Titan Wiki (Fandom)</a></li>
+                <li><a href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan" target="_blank">Crunchyroll — Attack on Titan</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Attack_on_Titan" target="_blank">Wikipedia — Attack on Titan</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
