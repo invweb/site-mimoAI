@@ -808,3 +808,132 @@ dd { margin-bottom: 0.5rem; }
 .genre-tag:hover {
     background: #bbdefb;
 }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background: #fff;
+    color: #667eea;
+}
+
+.btn-secondary {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+/* Hub Badge */
+.hub-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background: #e3f2fd;
+    color: #1565c0;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+/* Tech Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tech-item {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.tech-item strong {
+    display: block;
+    color: #0066cc;
+    margin-bottom: 0.25rem;
+}
+
+.tech-item span {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Quick Links */
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.quick-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #0066cc;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.quick-link:hover {
+    background: #0052a3;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+footer a {
+    color: #0066cc;
+}

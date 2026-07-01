@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>MiMo AI — Аниме портал</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -14,8 +14,191 @@
         <a href="/search">Поиск</a>
     </nav>
     <main>
-        <h1>Welcome to My Site</h1>
-        <p>This is a dynamic website built with Flask.</p>
+        <section class="hero">
+            <h1>MiMo AI — Аниме портал</h1>
+            <p class="hero-subtitle">Создано с помощью AI-ассистента MiMo. 16 разделов, 25+ страниц, 22 SVG-иллюстрации.</p>
+            <div class="hero-buttons">
+                <a href="/anime" class="btn btn-primary">Смотреть аниме</a>
+                <a href="/search" class="btn btn-secondary">Найти аниме</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Что здесь есть</h2>
+            <p>Этот сайт — коллекция информации о самых популярных аниме-франшизах мира. Каждый раздел содержит подробное описание сюжета, персонажей,��统 сил и полезные ссылки на легальные платформы для просмотра.</p>
+        </section>
+
+        <section>
+            <h2>Популярное аниме</h2>
+            <div class="hub-grid">
+                <a href="/onepiece" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🏴‍☠️</div>
+                    <h3>One Piece</h3>
+                    <p>Самая продаваемая манга в мире — более 516 млн копий. Пираты Соломенной Шляпы ищут легендарное сокровище.</p>
+                    <span class="hub-badge">1168 серий</span>
+                </a>
+
+                <a href="/naruto" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🍥</div>
+                    <h3>Наруто</h3>
+                    <p>Ниндзя из Конохи, мечтающий стать Хокаге. 720 серий + Боруто.</p>
+                    <span class="hub-badge">720 серий</span>
+                </a>
+
+                <a href="/bleach" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">⚔️</div>
+                    <h3>Блич</h3>
+                    <p>Синигами, пустые и квинси. Тысячелетняя кровавая война.</p>
+                    <span class="hub-badge">406 серий</span>
+                </a>
+
+                <a href="/aot" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🗼</div>
+                    <h3>Атака Титанов</h3>
+                    <p>Человечество за стенами. Гигантские Титаны. Тайна мира.</p>
+                    <span class="hub-badge">87 серий</span>
+                </a>
+
+                <a href="/demonslayer" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🗡️</div>
+                    <h3>Истребитель демонов</h3>
+                    <p>Танджиро ищет лекарство для сестры-демона. Уфотабле.</p>
+                    <span class="hub-badge">2019–наст.</span>
+                </a>
+
+                <a href="/deathnote" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">📓</div>
+                    <h3>Тетрадь Смерти</h3>
+                    <p>Лайт Ягами vs L. Психологический триллер.</p>
+                    <span class="hub-badge">37 серий</span>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Классика и легенды</h2>
+            <div class="hub-grid">
+                <a href="/dragonball" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🐉</div>
+                    <h3>Дракон Болл</h3>
+                    <p>Классика сёнэн. Гоку и поиск драконьих шаров.</p>
+                </a>
+
+                <a href="/ghibli" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🌳</div>
+                    <h3>Studio Ghibli</h3>
+                    <p>Легендарная студия Миядзаки. 25 полнометражных фильмов.</p>
+                </a>
+
+                <a href="/totoro" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🐾</div>
+                    <h3>Мой сосед Тоторо</h3>
+                    <p>Классика Ghibli. Девочки и лесной дух. 1988 год.</p>
+                </a>
+
+                <a href="/hxh" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">⭐</div>
+                    <h3>Охотник x Охотник</h3>
+                    <p>Гон ищет отца. Тогаши. Один из лучших сёнэн.</p>
+                </a>
+
+                <a href="/fma" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">⚗️</div>
+                    <h3>Стальной алхимик</h3>
+                    <p>Братья Элрик и философский камень. Brotherhood.</p>
+                </a>
+
+                <a href="/guyver" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🤖</div>
+                    <h3>Гайвер</h3>
+                    <p>Био-броня, зоаноиды, корпорация «Кронос».</p>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Новинки и хиты</h2>
+            <div class="hub-grid">
+                <a href="/jjk" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">👁️</div>
+                    <h3>Магическая битва</h3>
+                    <p>Проклятия и колдовство. MAPPA. 2020–наст.</p>
+                </a>
+
+                <a href="/mha" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">💪</div>
+                    <h3>Моя геройская академия</h3>
+                    <p>Мир супергероев. Изuku и Олл Майт.</p>
+                </a>
+
+                <a href="/opm" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">👊</div>
+                    <h3>Ванпанчмен</h3>
+                    <p>Сайтама. Один удар. Пародия на сёнэн.</p>
+                </a>
+
+                <a href="/sao" class="hub-card">
+                    <div class="hub-icon" style="font-size:2.5rem">🎮</div>
+                    <h3>Мастера Меча Онлайн</h3>
+                    <p>VRMMORPG. Кирито и Асуна. Игровой мир.</p>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Статистика сайта</h2>
+            <div class="info-grid">
+                <div class="info-card"><span class="info-label">Аниме-разделов</span><span class="info-value">16</span></div>
+                <div class="info-card"><span class="info-label">Страниц</span><span class="info-value">30+</span></div>
+                <div class="info-card"><span class="info-label">SVG-иллюстраций</span><span class="info-value">22</span></div>
+                <div class="info-card"><span class="info-label">Интерактивные</span><span class="info-value">Квиз, поиск, фильтры</span></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>О сайте</h2>
+            <p>Этот сайт создан с помощью <strong>MiMo AI</strong> — AI-ассистента, интегрированного в VS Code. Все тексты, структура и SVG-иллюстрации были сгенерированы и отредактированы с участием искусственного интеллекта.</p>
+            <p>Сайт использует <strong>Python Flask</strong> для бэкенда и простой <strong>HTML/CSS/JavaScript</strong> для фронтенда. Деплой осуществляется на <strong>Fly.io</strong>.</p>
+            <p>Все изображения на сайте — <strong>оригинальные SVG-иллюстрации</strong>, созданные специально для этого проекта. Мы не используем скриншоты из аниме по причинам авторского права.</p>
+        </section>
+
+        <section>
+            <h2>Технологии</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <strong>Backend</strong>
+                    <span>Python 3.12, Flask, Gunicorn</span>
+                </div>
+                <div class="tech-item">
+                    <strong>Frontend</strong>
+                    <span>HTML5, CSS3, vanilla JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <strong>Деплой</strong>
+                    <span>Fly.io, Docker</span>
+                </div>
+                <div class="tech-item">
+                    <strong>AI-инструмент</strong>
+                    <span>MiMo AI (VS Code)</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Быстрый доступ</h2>
+            <div class="quick-links">
+                <a href="/anime" class="quick-link">Все аниме</a>
+                <a href="/search" class="quick-link">Поиск</a>
+                <a href="/guyver" class="quick-link">Гайвер</a>
+                <a href="/totoro" class="quick-link">Тоторо</a>
+                <a href="/ghibli" class="quick-link">Ghibli</a>
+                <a href="/about" class="quick-link">О проекте</a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>MiMo AI — Аниме портал | Создано с помощью AI | <a href="https://github.com/invweb/site" target="_blank">GitHub</a></p>
+    </footer>
 </body>
 </html>
